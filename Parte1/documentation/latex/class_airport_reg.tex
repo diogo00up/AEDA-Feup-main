@@ -1,0 +1,133 @@
+\hypertarget{class_airport_reg}{}\doxysection{Airport\+Reg Class Reference}
+\label{class_airport_reg}\index{AirportReg@{AirportReg}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const vector$<$ \mbox{\hyperlink{class_airport}{Airport}} $\ast$ $>$ \& \mbox{\hyperlink{class_airport_reg_a047f2578f27d386020283c5950ec4ea1}{get\+Airports}} () const
+\item 
+void \mbox{\hyperlink{class_airport_reg_af67a7f93c461487afeaaafa7d1020877}{add\+Airport}} (\mbox{\hyperlink{class_airport}{Airport}} $\ast$airport)
+\begin{DoxyCompactList}\small\item\em adds an airport to vector airports \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_airport_reg_a63a4c757c3fca84f509e79b599ef2dbd}{add\+Airport}} (string local)
+\item 
+bool \mbox{\hyperlink{class_airport_reg_aac980b2cffdf53893a476641d146afaa}{find\+Airport}} (string local)
+\item 
+bool \mbox{\hyperlink{class_airport_reg_aeacc35dafb6a96b731d8f2a21ba152d1}{rem\+Airport}} (string local)
+\item 
+\mbox{\Hypertarget{class_airport_reg_ac5aeb5eeae1864f37a2f77be2aca6676}\label{class_airport_reg_ac5aeb5eeae1864f37a2f77be2aca6676}} 
+void \mbox{\hyperlink{class_airport_reg_ac5aeb5eeae1864f37a2f77be2aca6676}{list\+Airports}} ()
+\begin{DoxyCompactList}\small\item\em lists airports in vector airports \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_airport}{Airport}} $\ast$ \mbox{\hyperlink{class_airport_reg_aba6d43d358b5900664b96c309d615aef}{get\+Airport}} (string local)
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{class_airport_reg_ac3620967ddea406fe011fd953b05aace}{operator$<$$<$}} (ostream \&os, \mbox{\hyperlink{class_airport}{Airport}} \&airport)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_airport_reg_af67a7f93c461487afeaaafa7d1020877}\label{class_airport_reg_af67a7f93c461487afeaaafa7d1020877}} 
+\index{AirportReg@{AirportReg}!addAirport@{addAirport}}
+\index{addAirport@{addAirport}!AirportReg@{AirportReg}}
+\doxysubsubsection{\texorpdfstring{addAirport()}{addAirport()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Airport\+Reg\+::add\+Airport (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_airport}{Airport}} $\ast$}]{airport }\end{DoxyParamCaption})}
+
+
+
+adds an airport to vector airports 
+
+
+\begin{DoxyParams}{Parameters}
+{\em airport} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_airport_reg_a63a4c757c3fca84f509e79b599ef2dbd}\label{class_airport_reg_a63a4c757c3fca84f509e79b599ef2dbd}} 
+\index{AirportReg@{AirportReg}!addAirport@{addAirport}}
+\index{addAirport@{addAirport}!AirportReg@{AirportReg}}
+\doxysubsubsection{\texorpdfstring{addAirport()}{addAirport()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Airport\+Reg\+::add\+Airport (\begin{DoxyParamCaption}\item[{string}]{local }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em local} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if airport was added 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_airport_reg_aac980b2cffdf53893a476641d146afaa}\label{class_airport_reg_aac980b2cffdf53893a476641d146afaa}} 
+\index{AirportReg@{AirportReg}!findAirport@{findAirport}}
+\index{findAirport@{findAirport}!AirportReg@{AirportReg}}
+\doxysubsubsection{\texorpdfstring{findAirport()}{findAirport()}}
+{\footnotesize\ttfamily bool Airport\+Reg\+::find\+Airport (\begin{DoxyParamCaption}\item[{string}]{local }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em local} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if airport with parameter local exists 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_airport_reg_aba6d43d358b5900664b96c309d615aef}\label{class_airport_reg_aba6d43d358b5900664b96c309d615aef}} 
+\index{AirportReg@{AirportReg}!getAirport@{getAirport}}
+\index{getAirport@{getAirport}!AirportReg@{AirportReg}}
+\doxysubsubsection{\texorpdfstring{getAirport()}{getAirport()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_airport}{Airport}} $\ast$ Airport\+Reg\+::get\+Airport (\begin{DoxyParamCaption}\item[{string}]{local }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em local} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_airport}{Airport}} with paramater local 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_airport_reg_a047f2578f27d386020283c5950ec4ea1}\label{class_airport_reg_a047f2578f27d386020283c5950ec4ea1}} 
+\index{AirportReg@{AirportReg}!getAirports@{getAirports}}
+\index{getAirports@{getAirports}!AirportReg@{AirportReg}}
+\doxysubsubsection{\texorpdfstring{getAirports()}{getAirports()}}
+{\footnotesize\ttfamily const vector$<$ \mbox{\hyperlink{class_airport}{Airport}} $\ast$ $>$ \& Airport\+Reg\+::get\+Airports (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+vector airports 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_airport_reg_aeacc35dafb6a96b731d8f2a21ba152d1}\label{class_airport_reg_aeacc35dafb6a96b731d8f2a21ba152d1}} 
+\index{AirportReg@{AirportReg}!remAirport@{remAirport}}
+\index{remAirport@{remAirport}!AirportReg@{AirportReg}}
+\doxysubsubsection{\texorpdfstring{remAirport()}{remAirport()}}
+{\footnotesize\ttfamily bool Airport\+Reg\+::rem\+Airport (\begin{DoxyParamCaption}\item[{string}]{local }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em local} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if airport with paramater local was removed 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_airport_reg_ac3620967ddea406fe011fd953b05aace}\label{class_airport_reg_ac3620967ddea406fe011fd953b05aace}} 
+\index{AirportReg@{AirportReg}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!AirportReg@{AirportReg}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{\mbox{\hyperlink{class_airport}{Airport}} \&}]{airport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & \\
+\hline
+{\em airport} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+prints information about an aeroport 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Registers/Airport\+Reg.\+h\item 
+Registers/Airport\+Reg.\+cpp\end{DoxyCompactItemize}

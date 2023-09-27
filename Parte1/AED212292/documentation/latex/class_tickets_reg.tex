@@ -1,0 +1,175 @@
+\hypertarget{class_tickets_reg}{}\doxysection{Tickets\+Reg Class Reference}
+\label{class_tickets_reg}\index{TicketsReg@{TicketsReg}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_tickets_reg_a20866420d12be67d26a01df22bd30ec3}{add\+Ticket}} (\mbox{\hyperlink{class_ticket}{Ticket}} $\ast$ticket)
+\item 
+bool \mbox{\hyperlink{class_tickets_reg_ac4244b792c7b861d474a4b6c92bf97fe}{add\+Ticket}} (int id, int n\+Suit\+Cases, \mbox{\hyperlink{class_client}{Client}} $\ast$client, \mbox{\hyperlink{class_flight}{Flight}} $\ast$flight)
+\item 
+bool \mbox{\hyperlink{class_tickets_reg_a6c1b2beb6eacf22223e6fd15b2299fa2}{find\+Ticket}} (int id)
+\item 
+bool \mbox{\hyperlink{class_tickets_reg_a168f678c4b4fb287153d54dcf5b0fd03}{match\+Ticket\+Client}} (int ticket\+Id, int client\+Id)
+\item 
+\mbox{\Hypertarget{class_tickets_reg_a62acf7501577dd3df848c41af8fac68b}\label{class_tickets_reg_a62acf7501577dd3df848c41af8fac68b}} 
+void \mbox{\hyperlink{class_tickets_reg_a62acf7501577dd3df848c41af8fac68b}{list\+Tickets}} ()
+\begin{DoxyCompactList}\small\item\em listd all tickets on the list \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tickets_reg_ab6275f5b4f2486ee1e195c36edbe5f68}{list\+Tickets}} (int client\+Id)
+\begin{DoxyCompactList}\small\item\em lists all tickets bellonging to client with client\+ID \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_tickets_reg_a0f19e6002b204ed9c4d80a934a971b1e}{check\+In}} (int ticket\+Id)
+\item 
+\mbox{\hyperlink{class_ticket}{Ticket}} $\ast$ \mbox{\hyperlink{class_tickets_reg_accdd5ff30ad7e01af595b5b4da1a74d4}{get\+Ticket}} (int id)
+\item 
+const list$<$ \mbox{\hyperlink{class_ticket}{Ticket}} $\ast$ $>$ \& \mbox{\hyperlink{class_tickets_reg_a06cda8258f4c4976cefa434ac75e2fa7}{get\+Tickets}} () const
+\item 
+void \mbox{\hyperlink{class_tickets_reg_a0860318c44a88a038156707b01f2bc6a}{rem\+Ticket}} (string local)
+\item 
+void \mbox{\hyperlink{class_tickets_reg_a4c79d186279f03743a9f410d81e73fa9}{rem\+Ticket\+Airplane}} (string airplane)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tickets_reg_ac4244b792c7b861d474a4b6c92bf97fe}\label{class_tickets_reg_ac4244b792c7b861d474a4b6c92bf97fe}} 
+\index{TicketsReg@{TicketsReg}!addTicket@{addTicket}}
+\index{addTicket@{addTicket}!TicketsReg@{TicketsReg}}
+\doxysubsubsection{\texorpdfstring{addTicket()}{addTicket()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Tickets\+Reg\+::add\+Ticket (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int}]{n\+Suit\+Cases,  }\item[{\mbox{\hyperlink{class_client}{Client}} $\ast$}]{client,  }\item[{\mbox{\hyperlink{class_flight}{Flight}} $\ast$}]{flight }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+{\em n\+Suit\+Cases} & \\
+\hline
+{\em client} & \\
+\hline
+{\em flight} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if ticket with all parameters was added to list of tickets 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tickets_reg_a20866420d12be67d26a01df22bd30ec3}\label{class_tickets_reg_a20866420d12be67d26a01df22bd30ec3}} 
+\index{TicketsReg@{TicketsReg}!addTicket@{addTicket}}
+\index{addTicket@{addTicket}!TicketsReg@{TicketsReg}}
+\doxysubsubsection{\texorpdfstring{addTicket()}{addTicket()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Tickets\+Reg\+::add\+Ticket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ticket}{Ticket}} $\ast$}]{ticket }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ticket} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if ticket was added to list of tickets 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tickets_reg_a0f19e6002b204ed9c4d80a934a971b1e}\label{class_tickets_reg_a0f19e6002b204ed9c4d80a934a971b1e}} 
+\index{TicketsReg@{TicketsReg}!checkIn@{checkIn}}
+\index{checkIn@{checkIn}!TicketsReg@{TicketsReg}}
+\doxysubsubsection{\texorpdfstring{checkIn()}{checkIn()}}
+{\footnotesize\ttfamily bool Tickets\+Reg\+::check\+In (\begin{DoxyParamCaption}\item[{int}]{ticket\+Id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ticket\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if ticked\+Id was checkedin 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tickets_reg_a6c1b2beb6eacf22223e6fd15b2299fa2}\label{class_tickets_reg_a6c1b2beb6eacf22223e6fd15b2299fa2}} 
+\index{TicketsReg@{TicketsReg}!findTicket@{findTicket}}
+\index{findTicket@{findTicket}!TicketsReg@{TicketsReg}}
+\doxysubsubsection{\texorpdfstring{findTicket()}{findTicket()}}
+{\footnotesize\ttfamily bool Tickets\+Reg\+::find\+Ticket (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if ticket with id exits 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tickets_reg_accdd5ff30ad7e01af595b5b4da1a74d4}\label{class_tickets_reg_accdd5ff30ad7e01af595b5b4da1a74d4}} 
+\index{TicketsReg@{TicketsReg}!getTicket@{getTicket}}
+\index{getTicket@{getTicket}!TicketsReg@{TicketsReg}}
+\doxysubsubsection{\texorpdfstring{getTicket()}{getTicket()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ticket}{Ticket}} $\ast$ Tickets\+Reg\+::get\+Ticket (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+tickry with id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tickets_reg_a06cda8258f4c4976cefa434ac75e2fa7}\label{class_tickets_reg_a06cda8258f4c4976cefa434ac75e2fa7}} 
+\index{TicketsReg@{TicketsReg}!getTickets@{getTickets}}
+\index{getTickets@{getTickets}!TicketsReg@{TicketsReg}}
+\doxysubsubsection{\texorpdfstring{getTickets()}{getTickets()}}
+{\footnotesize\ttfamily const list$<$ \mbox{\hyperlink{class_ticket}{Ticket}} $\ast$ $>$ \& Tickets\+Reg\+::get\+Tickets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+list of tickets 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tickets_reg_ab6275f5b4f2486ee1e195c36edbe5f68}\label{class_tickets_reg_ab6275f5b4f2486ee1e195c36edbe5f68}} 
+\index{TicketsReg@{TicketsReg}!listTickets@{listTickets}}
+\index{listTickets@{listTickets}!TicketsReg@{TicketsReg}}
+\doxysubsubsection{\texorpdfstring{listTickets()}{listTickets()}}
+{\footnotesize\ttfamily void Tickets\+Reg\+::list\+Tickets (\begin{DoxyParamCaption}\item[{int}]{client\+Id }\end{DoxyParamCaption})}
+
+
+
+lists all tickets bellonging to client with client\+ID 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\+Id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tickets_reg_a168f678c4b4fb287153d54dcf5b0fd03}\label{class_tickets_reg_a168f678c4b4fb287153d54dcf5b0fd03}} 
+\index{TicketsReg@{TicketsReg}!matchTicketClient@{matchTicketClient}}
+\index{matchTicketClient@{matchTicketClient}!TicketsReg@{TicketsReg}}
+\doxysubsubsection{\texorpdfstring{matchTicketClient()}{matchTicketClient()}}
+{\footnotesize\ttfamily bool Tickets\+Reg\+::match\+Ticket\+Client (\begin{DoxyParamCaption}\item[{int}]{ticket\+Id,  }\item[{int}]{client\+Id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ticket\+Id} & \\
+\hline
+{\em client\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if client with client\+Id matches with ticket with ticket\+Id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_tickets_reg_a0860318c44a88a038156707b01f2bc6a}\label{class_tickets_reg_a0860318c44a88a038156707b01f2bc6a}} 
+\index{TicketsReg@{TicketsReg}!remTicket@{remTicket}}
+\index{remTicket@{remTicket}!TicketsReg@{TicketsReg}}
+\doxysubsubsection{\texorpdfstring{remTicket()}{remTicket()}}
+{\footnotesize\ttfamily void Tickets\+Reg\+::rem\+Ticket (\begin{DoxyParamCaption}\item[{string}]{local }\end{DoxyParamCaption})}
+
+removes tickets from an aiport and to an airport 
+\begin{DoxyParams}{Parameters}
+{\em local} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tickets_reg_a4c79d186279f03743a9f410d81e73fa9}\label{class_tickets_reg_a4c79d186279f03743a9f410d81e73fa9}} 
+\index{TicketsReg@{TicketsReg}!remTicketAirplane@{remTicketAirplane}}
+\index{remTicketAirplane@{remTicketAirplane}!TicketsReg@{TicketsReg}}
+\doxysubsubsection{\texorpdfstring{remTicketAirplane()}{remTicketAirplane()}}
+{\footnotesize\ttfamily void Tickets\+Reg\+::rem\+Ticket\+Airplane (\begin{DoxyParamCaption}\item[{string}]{airplane }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em airplane} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Registers/Tickets\+Reg.\+h\item 
+Registers/Tickets\+Reg.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,164 @@
+\hypertarget{class_service_reg}{}\doxysection{Service\+Reg Class Reference}
+\label{class_service_reg}\index{ServiceReg@{ServiceReg}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_service_reg_ad266ba6776a38ddca84f95cff8aea93f}{add\+Service}} (int service\+Id, Service\+Type service\+Type, \mbox{\hyperlink{class_date}{Date}} date, \mbox{\hyperlink{class_worker}{Worker}} $\ast$worker, \mbox{\hyperlink{class_airplane}{Airplane}} $\ast$airplane)
+\item 
+void \mbox{\hyperlink{class_service_reg_a4af699b1bdccdbbc16fefbcd1f2a3d9e}{add\+Service}} (\mbox{\hyperlink{class_service}{Service}} $\ast$service)
+\begin{DoxyCompactList}\small\item\em adds a service to queue \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_service_reg_a24d1884b08751145681acad56290a954}{rem\+Service}} (int service\+Id)
+\item 
+bool \mbox{\hyperlink{class_service_reg_a8d07b85326e4f119f8fa3e2c1fb7dd58}{find\+Service\+To\+Do}} (int service\+Id)
+\item 
+bool \mbox{\hyperlink{class_service_reg_ac85a32803088c2e4d64146bfd8b69984}{find\+Service\+To\+Do}} (\mbox{\hyperlink{class_date}{Date}} date, Service\+Type service\+Type)
+\item 
+bool \mbox{\hyperlink{class_service_reg_a9177ebb8935c792ad434f081154548a1}{find\+Service\+Done}} (int service\+Id)
+\item 
+bool \mbox{\hyperlink{class_service_reg_a267d0f0056d60cf0496157b2c726e0a8}{find\+Service\+Done}} (\mbox{\hyperlink{class_date}{Date}} date, Service\+Type service\+Type)
+\item 
+\mbox{\Hypertarget{class_service_reg_a0caccfb5930e8faf544f0cbc260d8fc3}\label{class_service_reg_a0caccfb5930e8faf544f0cbc260d8fc3}} 
+void \mbox{\hyperlink{class_service_reg_a0caccfb5930e8faf544f0cbc260d8fc3}{list\+Services}} ()
+\begin{DoxyCompactList}\small\item\em lists all services in the queue \end{DoxyCompactList}\item 
+const queue$<$ \mbox{\hyperlink{class_service}{Service}} $\ast$ $>$ \& \mbox{\hyperlink{class_service_reg_a2a18d8141b4d329602d5a730b64504b3}{get\+Services\+To\+Do}} () const
+\item 
+const queue$<$ \mbox{\hyperlink{class_service}{Service}} $\ast$ $>$ \& \mbox{\hyperlink{class_service_reg_a54c921772dd9ad9abf718f622f474a3f}{get\+Services\+Done}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_service_reg_ad266ba6776a38ddca84f95cff8aea93f}\label{class_service_reg_ad266ba6776a38ddca84f95cff8aea93f}} 
+\index{ServiceReg@{ServiceReg}!addService@{addService}}
+\index{addService@{addService}!ServiceReg@{ServiceReg}}
+\doxysubsubsection{\texorpdfstring{addService()}{addService()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Service\+Reg\+::add\+Service (\begin{DoxyParamCaption}\item[{int}]{service\+Id,  }\item[{Service\+Type}]{service\+Type,  }\item[{\mbox{\hyperlink{class_date}{Date}}}]{date,  }\item[{\mbox{\hyperlink{class_worker}{Worker}} $\ast$}]{worker,  }\item[{\mbox{\hyperlink{class_airplane}{Airplane}} $\ast$}]{airplane }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em service\+Id} & \\
+\hline
+{\em service\+Type} & \\
+\hline
+{\em date} & \\
+\hline
+{\em worker} & \\
+\hline
+{\em airplane} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if service with all parameters didnt exist and was added to queue 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_service_reg_a4af699b1bdccdbbc16fefbcd1f2a3d9e}\label{class_service_reg_a4af699b1bdccdbbc16fefbcd1f2a3d9e}} 
+\index{ServiceReg@{ServiceReg}!addService@{addService}}
+\index{addService@{addService}!ServiceReg@{ServiceReg}}
+\doxysubsubsection{\texorpdfstring{addService()}{addService()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Service\+Reg\+::add\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_service}{Service}} $\ast$}]{service }\end{DoxyParamCaption})}
+
+
+
+adds a service to queue 
+
+
+\begin{DoxyParams}{Parameters}
+{\em service} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_service_reg_a267d0f0056d60cf0496157b2c726e0a8}\label{class_service_reg_a267d0f0056d60cf0496157b2c726e0a8}} 
+\index{ServiceReg@{ServiceReg}!findServiceDone@{findServiceDone}}
+\index{findServiceDone@{findServiceDone}!ServiceReg@{ServiceReg}}
+\doxysubsubsection{\texorpdfstring{findServiceDone()}{findServiceDone()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Service\+Reg\+::find\+Service\+Done (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_date}{Date}}}]{date,  }\item[{Service\+Type}]{service\+Type }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & \\
+\hline
+{\em service\+Type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if service with all parameters was found 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_service_reg_a9177ebb8935c792ad434f081154548a1}\label{class_service_reg_a9177ebb8935c792ad434f081154548a1}} 
+\index{ServiceReg@{ServiceReg}!findServiceDone@{findServiceDone}}
+\index{findServiceDone@{findServiceDone}!ServiceReg@{ServiceReg}}
+\doxysubsubsection{\texorpdfstring{findServiceDone()}{findServiceDone()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Service\+Reg\+::find\+Service\+Done (\begin{DoxyParamCaption}\item[{int}]{service\+Id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em service\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if service with service\+Id was found 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_service_reg_ac85a32803088c2e4d64146bfd8b69984}\label{class_service_reg_ac85a32803088c2e4d64146bfd8b69984}} 
+\index{ServiceReg@{ServiceReg}!findServiceToDo@{findServiceToDo}}
+\index{findServiceToDo@{findServiceToDo}!ServiceReg@{ServiceReg}}
+\doxysubsubsection{\texorpdfstring{findServiceToDo()}{findServiceToDo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Service\+Reg\+::find\+Service\+To\+Do (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_date}{Date}}}]{date,  }\item[{Service\+Type}]{service\+Type }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & \\
+\hline
+{\em service\+Type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if service with all parameters was found 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_service_reg_a8d07b85326e4f119f8fa3e2c1fb7dd58}\label{class_service_reg_a8d07b85326e4f119f8fa3e2c1fb7dd58}} 
+\index{ServiceReg@{ServiceReg}!findServiceToDo@{findServiceToDo}}
+\index{findServiceToDo@{findServiceToDo}!ServiceReg@{ServiceReg}}
+\doxysubsubsection{\texorpdfstring{findServiceToDo()}{findServiceToDo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Service\+Reg\+::find\+Service\+To\+Do (\begin{DoxyParamCaption}\item[{int}]{service\+Id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em service\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if service with service\+Id was founf 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_service_reg_a54c921772dd9ad9abf718f622f474a3f}\label{class_service_reg_a54c921772dd9ad9abf718f622f474a3f}} 
+\index{ServiceReg@{ServiceReg}!getServicesDone@{getServicesDone}}
+\index{getServicesDone@{getServicesDone}!ServiceReg@{ServiceReg}}
+\doxysubsubsection{\texorpdfstring{getServicesDone()}{getServicesDone()}}
+{\footnotesize\ttfamily const queue$<$ \mbox{\hyperlink{class_service}{Service}} $\ast$ $>$ \& Service\+Reg\+::get\+Services\+Done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+queue of services to be done 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_service_reg_a2a18d8141b4d329602d5a730b64504b3}\label{class_service_reg_a2a18d8141b4d329602d5a730b64504b3}} 
+\index{ServiceReg@{ServiceReg}!getServicesToDo@{getServicesToDo}}
+\index{getServicesToDo@{getServicesToDo}!ServiceReg@{ServiceReg}}
+\doxysubsubsection{\texorpdfstring{getServicesToDo()}{getServicesToDo()}}
+{\footnotesize\ttfamily const queue$<$ \mbox{\hyperlink{class_service}{Service}} $\ast$ $>$ \& Service\+Reg\+::get\+Services\+To\+Do (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+queue of services to do 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_service_reg_a24d1884b08751145681acad56290a954}\label{class_service_reg_a24d1884b08751145681acad56290a954}} 
+\index{ServiceReg@{ServiceReg}!remService@{remService}}
+\index{remService@{remService}!ServiceReg@{ServiceReg}}
+\doxysubsubsection{\texorpdfstring{remService()}{remService()}}
+{\footnotesize\ttfamily bool Service\+Reg\+::rem\+Service (\begin{DoxyParamCaption}\item[{int}]{service\+Id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em service\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if service with service\+Id was removed from queue of services 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Registers/Service\+Reg.\+h\item 
+Registers/Service\+Reg.\+cpp\end{DoxyCompactItemize}

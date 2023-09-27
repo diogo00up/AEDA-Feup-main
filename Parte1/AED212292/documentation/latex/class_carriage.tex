@@ -1,0 +1,91 @@
+\hypertarget{class_carriage}{}\doxysection{Carriage Class Reference}
+\label{class_carriage}\index{Carriage@{Carriage}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_carriage_a4288c4e1d6711f691533213aa5f98113}\label{class_carriage_a4288c4e1d6711f691533213aa5f98113}} 
+{\bfseries Carriage} (int stack\+Size, int number\+Of\+Stacks\+Per\+Carriage)
+\item 
+int \mbox{\hyperlink{class_carriage_ac73e821242527dcec5686f3cddac389e}{get\+Stack\+Size}} () const
+\item 
+int \mbox{\hyperlink{class_carriage_ac28a6d082ab75b766e6b3e3f1f2ff405}{get\+Number\+Of\+Stacks\+Per\+Carriage}} () const
+\item 
+vector$<$ stack$<$ \mbox{\hyperlink{class_suit_case}{Suit\+Case}} $\ast$ $>$ $\ast$ $>$ \& \mbox{\hyperlink{class_carriage_ab46320b5b9567ec560bc0f0e7850f1de}{get\+Vetor}} ()
+\item 
+bool \mbox{\hyperlink{class_carriage_a30c11bd89fa160dc545583ebdff2f29c}{add\+To\+Car}} (\mbox{\hyperlink{class_suit_case}{Suit\+Case}} $\ast$suit\+Case)
+\item 
+bool \mbox{\hyperlink{class_carriage_a3400324eb8aad4abfdb9a8c22cd25f1c}{is\+Full}} ()
+\item 
+int \mbox{\hyperlink{class_carriage_acd1dd0f4c2e99a2ab04bf4948aa7b668}{get\+Size}} ()
+\item 
+\mbox{\Hypertarget{class_carriage_a1b70af9738dfa3829f5606ba10b9d7b4}\label{class_carriage_a1b70af9738dfa3829f5606ba10b9d7b4}} 
+void \mbox{\hyperlink{class_carriage_a1b70af9738dfa3829f5606ba10b9d7b4}{print\+Carriage}} ()
+\begin{DoxyCompactList}\small\item\em prints information about the carriage \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_carriage_a30c11bd89fa160dc545583ebdff2f29c}\label{class_carriage_a30c11bd89fa160dc545583ebdff2f29c}} 
+\index{Carriage@{Carriage}!addToCar@{addToCar}}
+\index{addToCar@{addToCar}!Carriage@{Carriage}}
+\doxysubsubsection{\texorpdfstring{addToCar()}{addToCar()}}
+{\footnotesize\ttfamily bool Carriage\+::add\+To\+Car (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_suit_case}{Suit\+Case}} $\ast$}]{suit\+Case }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em suit\+Case} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if adds suitcase sucefully to carriage 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_carriage_ac28a6d082ab75b766e6b3e3f1f2ff405}\label{class_carriage_ac28a6d082ab75b766e6b3e3f1f2ff405}} 
+\index{Carriage@{Carriage}!getNumberOfStacksPerCarriage@{getNumberOfStacksPerCarriage}}
+\index{getNumberOfStacksPerCarriage@{getNumberOfStacksPerCarriage}!Carriage@{Carriage}}
+\doxysubsubsection{\texorpdfstring{getNumberOfStacksPerCarriage()}{getNumberOfStacksPerCarriage()}}
+{\footnotesize\ttfamily int Carriage\+::get\+Number\+Of\+Stacks\+Per\+Carriage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+numbers of stacks per carriage 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_carriage_acd1dd0f4c2e99a2ab04bf4948aa7b668}\label{class_carriage_acd1dd0f4c2e99a2ab04bf4948aa7b668}} 
+\index{Carriage@{Carriage}!getSize@{getSize}}
+\index{getSize@{getSize}!Carriage@{Carriage}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily int Carriage\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+size of carriage 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_carriage_ac73e821242527dcec5686f3cddac389e}\label{class_carriage_ac73e821242527dcec5686f3cddac389e}} 
+\index{Carriage@{Carriage}!getStackSize@{getStackSize}}
+\index{getStackSize@{getStackSize}!Carriage@{Carriage}}
+\doxysubsubsection{\texorpdfstring{getStackSize()}{getStackSize()}}
+{\footnotesize\ttfamily int Carriage\+::get\+Stack\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+size of stack 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_carriage_ab46320b5b9567ec560bc0f0e7850f1de}\label{class_carriage_ab46320b5b9567ec560bc0f0e7850f1de}} 
+\index{Carriage@{Carriage}!getVetor@{getVetor}}
+\index{getVetor@{getVetor}!Carriage@{Carriage}}
+\doxysubsubsection{\texorpdfstring{getVetor()}{getVetor()}}
+{\footnotesize\ttfamily vector$<$ stack$<$ \mbox{\hyperlink{class_suit_case}{Suit\+Case}} $\ast$ $>$ $\ast$ $>$ \& Carriage\+::get\+Vetor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+vector of stacks of suitcases 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_carriage_a3400324eb8aad4abfdb9a8c22cd25f1c}\label{class_carriage_a3400324eb8aad4abfdb9a8c22cd25f1c}} 
+\index{Carriage@{Carriage}!isFull@{isFull}}
+\index{isFull@{isFull}!Carriage@{Carriage}}
+\doxysubsubsection{\texorpdfstring{isFull()}{isFull()}}
+{\footnotesize\ttfamily bool Carriage\+::is\+Full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+true if carriage is full 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Registers/Carriage.\+h\item 
+Registers/Carriage.\+cpp\end{DoxyCompactItemize}

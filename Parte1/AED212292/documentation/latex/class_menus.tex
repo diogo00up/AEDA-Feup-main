@@ -1,0 +1,488 @@
+\hypertarget{class_menus}{}\doxysection{Menus Class Reference}
+\label{class_menus}\index{Menus@{Menus}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_menus_ac3d9e05ca5c62ad3881ef4bb57b313eb}{Main\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Main menu presents all the options. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_menus_a271d96c4e83ce58527e458c8c5a49caa}{is\+\_\+number}} (const string \&s)
+\item 
+static string \mbox{\hyperlink{class_menus_aeebb67da7b78936bbcaa8eab5d25c3da}{add\+Airport\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Menu used to retrieve the name of the airport to create. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_menus_a65b50af8f4b69d4e0f7b9b1a8e7072c2}{rem\+Airport\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Menu used to retrieve the name of the airport to remove. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_menus_a9ddcf43abd39fe1a67a9a53f6b625656}\label{class_menus_a9ddcf43abd39fe1a67a9a53f6b625656}} 
+static void \mbox{\hyperlink{class_menus_a9ddcf43abd39fe1a67a9a53f6b625656}{return\+To\+Main\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em returns to the main menu \end{DoxyCompactList}\item 
+static vector$<$ string $>$ \mbox{\hyperlink{class_menus_ab79a2dd21b5b978a84d6e13d04c9d7b1}{split\+String}} (string s, string delimiter)
+\item 
+static void \mbox{\hyperlink{class_menus_ac951e739560591958f82d90916f04ed6}{add\+Plane\+Menu}} (string \&license\+Plate, string \&type, int \&capacity)
+\begin{DoxyCompactList}\small\item\em Menu used to retrieve data to add an airplane. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_menus_aed557f8a2d8f62448710169e18dbeb02}{rem\+Plane\+Menu}} (string \&license\+Plate)
+\begin{DoxyCompactList}\small\item\em Menu used to retrieve the license plate of the airplane to remove. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_menus_adb02f36e9e7dbaaabf73aeb62fcc177f}{add\+Flight\+Menu}} (string \&origin\+Airport, string \&destination\+Airport, int \&flight\+Number, int \&duration, string \&plane\+License\+Plate)
+\begin{DoxyCompactList}\small\item\em Menu used to retrieve data to add a flight. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_menus_a5c3c20c7e14d92c54f557367233e8682}{rem\+Flight\+Menu}} (int \&flight\+Number)
+\begin{DoxyCompactList}\small\item\em Menu used to retrieve the flight number of the flight to remove. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_menus_a040b6264fa62c168a0c4f549aa8a2143}{add\+Client\+Menu}} (int \&client\+Id, string \&name, \mbox{\hyperlink{class_date}{Date}} \&date)
+\begin{DoxyCompactList}\small\item\em Menu used to retrieve data to add a client. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_menus_a1cd2b3aefc265351e51ff980ecd23cab}{rem\+Client\+Menu}} (int \&client\+Id)
+\begin{DoxyCompactList}\small\item\em Menu used to retrieve the client\+Id of the client to remove. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_menus_aa021c544e9f00644ada695dfc335b0e1}{add\+Worker\+Menu}} (int \&worker\+Id, string \&name, \mbox{\hyperlink{class_date}{Date}} \&date, int \&salary)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_menus}{Menus}} used to retrieve data to add a worker. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_menus_a9d64bd1577796041f08b9fb38f73c786}{rem\+Worker\+Menu}} (int \&worker\+Id)
+\begin{DoxyCompactList}\small\item\em Menu used to retrieve the worker\+Id of the worker to remove. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_menus_a78c659d0cde246d3c7f45e9c9dfe6845}{add\+Service\+Menu}} (int \&service\+Id, string \&service\+Type, \mbox{\hyperlink{class_date}{Date}} \&date, int \&worker\+Id, string \&plane\+License\+Plate)
+\begin{DoxyCompactList}\small\item\em Menu used to retrieve data to add a service. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_menus_afbba2f6f55726879869013b0c6027c5b}{rem\+Service\+Menu}} (int \&service\+Id)
+\begin{DoxyCompactList}\small\item\em Menu used to retrieve the service\+Id of the service to remove. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_menus_a404f15c1999c8236e517f8259c7614ec}{add\+Transportation\+Local\+Menu}} (int \&transportation\+Local\+Id, float \&distance, string \&transportation\+Type, string \&airport\+Local)
+\begin{DoxyCompactList}\small\item\em Menu used to retrieve data to add a transport. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_menus_a817c53bc8710daad7456542cf678b41f}{rem\+Transportation\+Menu}} (int \&id)
+\begin{DoxyCompactList}\small\item\em Menu used to retrieve the id of the transport to remove. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_menus_acd4673824b0defb720f391d33ffefd96}{add\+Time\+Table\+Menu}} (int \&id, string \&time)
+\begin{DoxyCompactList}\small\item\em Menu used to add times to the timetable of a transport. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_menus_a456823159050f45159148ef780c509f2}{rem\+Time\+Table}} (int \&id, string \&time)
+\begin{DoxyCompactList}\small\item\em Menu used to remove times from a transport\textquotesingle{}s timetable. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_menus_a53fc6a6f13efbba368a11674d1f3bf47}{list\+Time\+Table}} (int \&id)
+\begin{DoxyCompactList}\small\item\em Menu used to list the timetable of a specific transport. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_menus_a19378d2051686fbf8517dee374693ed1}{buy\+Ticket\+Menu}} (int \&client\+Id, int \&flight\+Id, vector$<$ int $>$ \&ticket\+Ids, int \&num\+Tickets, vector$<$ int $>$ \&suit\+Cases, \mbox{\hyperlink{class_flight_reg}{Flight\+Reg}} \&flight\+Reg)
+\begin{DoxyCompactList}\small\item\em Menu used to retrieve data to add a ticket. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_menus_acdb27852a8186f76f15fea80d62df9f0}{get\+Client\+Id\+Menu}} (int \&client\+Id, \mbox{\hyperlink{class_client_reg}{Client\+Reg}} \&client\+Reg)
+\begin{DoxyCompactList}\small\item\em Menu used to retrieve a client\+Id. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_menus_a19c65140514469d06b3e948782e2cea3}{check\+In\+Menu}} (int \&ticket\+Id)
+\begin{DoxyCompactList}\small\item\em Menu used to check in a ticket. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_menus_a6f632caffe3c95de7f9e1848b684e462}{check\+Luggage\+Menu}} (int \&ticket\+Id)
+\begin{DoxyCompactList}\small\item\em Menu used to check in the luggage. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_menus_afc5be13b0725002499e7fac094604da7}{new\+Car\+Menu}} (int \&stack\+Size, int \&n\+Stacks, int \&n\+Carriages)
+\begin{DoxyCompactList}\small\item\em Menu used to create a car to transport the luggage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_menus_aeebb67da7b78936bbcaa8eab5d25c3da}\label{class_menus_aeebb67da7b78936bbcaa8eab5d25c3da}} 
+\index{Menus@{Menus}!addAirportMenu@{addAirportMenu}}
+\index{addAirportMenu@{addAirportMenu}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{addAirportMenu()}{addAirportMenu()}}
+{\footnotesize\ttfamily string Menus\+::add\+Airport\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menu used to retrieve the name of the airport to create. 
+
+\begin{DoxyReturn}{Returns}
+string which represents the local of an airport 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_menus_a040b6264fa62c168a0c4f549aa8a2143}\label{class_menus_a040b6264fa62c168a0c4f549aa8a2143}} 
+\index{Menus@{Menus}!addClientMenu@{addClientMenu}}
+\index{addClientMenu@{addClientMenu}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{addClientMenu()}{addClientMenu()}}
+{\footnotesize\ttfamily void Menus\+::add\+Client\+Menu (\begin{DoxyParamCaption}\item[{int \&}]{client\+Id,  }\item[{string \&}]{name,  }\item[{\mbox{\hyperlink{class_date}{Date}} \&}]{date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menu used to retrieve data to add a client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\+Id} & \\
+\hline
+{\em name} & \\
+\hline
+{\em date} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menus_adb02f36e9e7dbaaabf73aeb62fcc177f}\label{class_menus_adb02f36e9e7dbaaabf73aeb62fcc177f}} 
+\index{Menus@{Menus}!addFlightMenu@{addFlightMenu}}
+\index{addFlightMenu@{addFlightMenu}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{addFlightMenu()}{addFlightMenu()}}
+{\footnotesize\ttfamily void Menus\+::add\+Flight\+Menu (\begin{DoxyParamCaption}\item[{string \&}]{origin\+Airport,  }\item[{string \&}]{destination\+Airport,  }\item[{int \&}]{flight\+Number,  }\item[{int \&}]{duration,  }\item[{string \&}]{plane\+License\+Plate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menu used to retrieve data to add a flight. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em origin\+Airport} & \\
+\hline
+{\em destination\+Airport} & \\
+\hline
+{\em flight\+Number} & \\
+\hline
+{\em duration} & \\
+\hline
+{\em plane\+License\+Plate} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menus_ac951e739560591958f82d90916f04ed6}\label{class_menus_ac951e739560591958f82d90916f04ed6}} 
+\index{Menus@{Menus}!addPlaneMenu@{addPlaneMenu}}
+\index{addPlaneMenu@{addPlaneMenu}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{addPlaneMenu()}{addPlaneMenu()}}
+{\footnotesize\ttfamily void Menus\+::add\+Plane\+Menu (\begin{DoxyParamCaption}\item[{string \&}]{license\+Plate,  }\item[{string \&}]{type,  }\item[{int \&}]{capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menu used to retrieve data to add an airplane. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em license\+Plate} & \\
+\hline
+{\em type} & \\
+\hline
+{\em capacity} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menus_a78c659d0cde246d3c7f45e9c9dfe6845}\label{class_menus_a78c659d0cde246d3c7f45e9c9dfe6845}} 
+\index{Menus@{Menus}!addServiceMenu@{addServiceMenu}}
+\index{addServiceMenu@{addServiceMenu}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{addServiceMenu()}{addServiceMenu()}}
+{\footnotesize\ttfamily void Menus\+::add\+Service\+Menu (\begin{DoxyParamCaption}\item[{int \&}]{service\+Id,  }\item[{string \&}]{service\+Type,  }\item[{\mbox{\hyperlink{class_date}{Date}} \&}]{date,  }\item[{int \&}]{worker\+Id,  }\item[{string \&}]{plane\+License\+Plate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menu used to retrieve data to add a service. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em service\+Id} & \\
+\hline
+{\em service\+Type} & \\
+\hline
+{\em date} & \\
+\hline
+{\em worker\+Id} & \\
+\hline
+{\em plane\+License\+Plate} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menus_acd4673824b0defb720f391d33ffefd96}\label{class_menus_acd4673824b0defb720f391d33ffefd96}} 
+\index{Menus@{Menus}!addTimeTableMenu@{addTimeTableMenu}}
+\index{addTimeTableMenu@{addTimeTableMenu}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{addTimeTableMenu()}{addTimeTableMenu()}}
+{\footnotesize\ttfamily void Menus\+::add\+Time\+Table\+Menu (\begin{DoxyParamCaption}\item[{int \&}]{id,  }\item[{string \&}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menu used to add times to the timetable of a transport. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+{\em time} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menus_a404f15c1999c8236e517f8259c7614ec}\label{class_menus_a404f15c1999c8236e517f8259c7614ec}} 
+\index{Menus@{Menus}!addTransportationLocalMenu@{addTransportationLocalMenu}}
+\index{addTransportationLocalMenu@{addTransportationLocalMenu}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{addTransportationLocalMenu()}{addTransportationLocalMenu()}}
+{\footnotesize\ttfamily void Menus\+::add\+Transportation\+Local\+Menu (\begin{DoxyParamCaption}\item[{int \&}]{transportation\+Local\+Id,  }\item[{float \&}]{distance,  }\item[{string \&}]{transportation\+Type,  }\item[{string \&}]{airport\+Local }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menu used to retrieve data to add a transport. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transportation\+Local\+Id} & \\
+\hline
+{\em distance} & \\
+\hline
+{\em transportation\+Type} & \\
+\hline
+{\em airport\+Local} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menus_aa021c544e9f00644ada695dfc335b0e1}\label{class_menus_aa021c544e9f00644ada695dfc335b0e1}} 
+\index{Menus@{Menus}!addWorkerMenu@{addWorkerMenu}}
+\index{addWorkerMenu@{addWorkerMenu}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{addWorkerMenu()}{addWorkerMenu()}}
+{\footnotesize\ttfamily void Menus\+::add\+Worker\+Menu (\begin{DoxyParamCaption}\item[{int \&}]{worker\+Id,  }\item[{string \&}]{name,  }\item[{\mbox{\hyperlink{class_date}{Date}} \&}]{date,  }\item[{int \&}]{salary }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_menus}{Menus}} used to retrieve data to add a worker. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em worker\+Id} & \\
+\hline
+{\em name} & \\
+\hline
+{\em date} & \\
+\hline
+{\em salary} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menus_a19378d2051686fbf8517dee374693ed1}\label{class_menus_a19378d2051686fbf8517dee374693ed1}} 
+\index{Menus@{Menus}!buyTicketMenu@{buyTicketMenu}}
+\index{buyTicketMenu@{buyTicketMenu}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{buyTicketMenu()}{buyTicketMenu()}}
+{\footnotesize\ttfamily void Menus\+::buy\+Ticket\+Menu (\begin{DoxyParamCaption}\item[{int \&}]{client\+Id,  }\item[{int \&}]{flight\+Id,  }\item[{vector$<$ int $>$ \&}]{ticket\+Ids,  }\item[{int \&}]{num\+Tickets,  }\item[{vector$<$ int $>$ \&}]{suit\+Cases,  }\item[{\mbox{\hyperlink{class_flight_reg}{Flight\+Reg}} \&}]{flight\+Reg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menu used to retrieve data to add a ticket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\+Id} & \\
+\hline
+{\em flight\+Id} & \\
+\hline
+{\em ticket\+Ids} & \\
+\hline
+{\em num\+Tickets} & \\
+\hline
+{\em suit\+Cases} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menus_a19c65140514469d06b3e948782e2cea3}\label{class_menus_a19c65140514469d06b3e948782e2cea3}} 
+\index{Menus@{Menus}!checkInMenu@{checkInMenu}}
+\index{checkInMenu@{checkInMenu}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{checkInMenu()}{checkInMenu()}}
+{\footnotesize\ttfamily void Menus\+::check\+In\+Menu (\begin{DoxyParamCaption}\item[{int \&}]{ticket\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menu used to check in a ticket. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ticket\+Id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menus_a6f632caffe3c95de7f9e1848b684e462}\label{class_menus_a6f632caffe3c95de7f9e1848b684e462}} 
+\index{Menus@{Menus}!checkLuggageMenu@{checkLuggageMenu}}
+\index{checkLuggageMenu@{checkLuggageMenu}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{checkLuggageMenu()}{checkLuggageMenu()}}
+{\footnotesize\ttfamily void Menus\+::check\+Luggage\+Menu (\begin{DoxyParamCaption}\item[{int \&}]{ticket\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menu used to check in the luggage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ticket\+Id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menus_acdb27852a8186f76f15fea80d62df9f0}\label{class_menus_acdb27852a8186f76f15fea80d62df9f0}} 
+\index{Menus@{Menus}!getClientIdMenu@{getClientIdMenu}}
+\index{getClientIdMenu@{getClientIdMenu}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{getClientIdMenu()}{getClientIdMenu()}}
+{\footnotesize\ttfamily void Menus\+::get\+Client\+Id\+Menu (\begin{DoxyParamCaption}\item[{int \&}]{client\+Id,  }\item[{\mbox{\hyperlink{class_client_reg}{Client\+Reg}} \&}]{client\+Reg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menu used to retrieve a client\+Id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\+Id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menus_a271d96c4e83ce58527e458c8c5a49caa}\label{class_menus_a271d96c4e83ce58527e458c8c5a49caa}} 
+\index{Menus@{Menus}!is\_number@{is\_number}}
+\index{is\_number@{is\_number}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{is\_number()}{is\_number()}}
+{\footnotesize\ttfamily bool Menus\+::is\+\_\+number (\begin{DoxyParamCaption}\item[{const string \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the input parameter is of the numeric type, else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_menus_a53fc6a6f13efbba368a11674d1f3bf47}\label{class_menus_a53fc6a6f13efbba368a11674d1f3bf47}} 
+\index{Menus@{Menus}!listTimeTable@{listTimeTable}}
+\index{listTimeTable@{listTimeTable}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{listTimeTable()}{listTimeTable()}}
+{\footnotesize\ttfamily void Menus\+::list\+Time\+Table (\begin{DoxyParamCaption}\item[{int \&}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menu used to list the timetable of a specific transport. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menus_ac3d9e05ca5c62ad3881ef4bb57b313eb}\label{class_menus_ac3d9e05ca5c62ad3881ef4bb57b313eb}} 
+\index{Menus@{Menus}!MainMenu@{MainMenu}}
+\index{MainMenu@{MainMenu}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{MainMenu()}{MainMenu()}}
+{\footnotesize\ttfamily int Menus\+::\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Main menu presents all the options. 
+
+\begin{DoxyReturn}{Returns}
+the option selected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_menus_afc5be13b0725002499e7fac094604da7}\label{class_menus_afc5be13b0725002499e7fac094604da7}} 
+\index{Menus@{Menus}!newCarMenu@{newCarMenu}}
+\index{newCarMenu@{newCarMenu}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{newCarMenu()}{newCarMenu()}}
+{\footnotesize\ttfamily void Menus\+::new\+Car\+Menu (\begin{DoxyParamCaption}\item[{int \&}]{stack\+Size,  }\item[{int \&}]{n\+Stacks,  }\item[{int \&}]{n\+Carriages }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menu used to create a car to transport the luggage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stack\+Size} & \\
+\hline
+{\em n\+Stacks} & \\
+\hline
+{\em n\+Carriages} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menus_a65b50af8f4b69d4e0f7b9b1a8e7072c2}\label{class_menus_a65b50af8f4b69d4e0f7b9b1a8e7072c2}} 
+\index{Menus@{Menus}!remAirportMenu@{remAirportMenu}}
+\index{remAirportMenu@{remAirportMenu}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{remAirportMenu()}{remAirportMenu()}}
+{\footnotesize\ttfamily string Menus\+::rem\+Airport\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menu used to retrieve the name of the airport to remove. 
+
+\begin{DoxyReturn}{Returns}
+string which represents the local of an airport 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_menus_a1cd2b3aefc265351e51ff980ecd23cab}\label{class_menus_a1cd2b3aefc265351e51ff980ecd23cab}} 
+\index{Menus@{Menus}!remClientMenu@{remClientMenu}}
+\index{remClientMenu@{remClientMenu}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{remClientMenu()}{remClientMenu()}}
+{\footnotesize\ttfamily void Menus\+::rem\+Client\+Menu (\begin{DoxyParamCaption}\item[{int \&}]{client\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menu used to retrieve the client\+Id of the client to remove. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\+Id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menus_a5c3c20c7e14d92c54f557367233e8682}\label{class_menus_a5c3c20c7e14d92c54f557367233e8682}} 
+\index{Menus@{Menus}!remFlightMenu@{remFlightMenu}}
+\index{remFlightMenu@{remFlightMenu}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{remFlightMenu()}{remFlightMenu()}}
+{\footnotesize\ttfamily void Menus\+::rem\+Flight\+Menu (\begin{DoxyParamCaption}\item[{int \&}]{flight\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menu used to retrieve the flight number of the flight to remove. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flight\+Number} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menus_aed557f8a2d8f62448710169e18dbeb02}\label{class_menus_aed557f8a2d8f62448710169e18dbeb02}} 
+\index{Menus@{Menus}!remPlaneMenu@{remPlaneMenu}}
+\index{remPlaneMenu@{remPlaneMenu}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{remPlaneMenu()}{remPlaneMenu()}}
+{\footnotesize\ttfamily void Menus\+::rem\+Plane\+Menu (\begin{DoxyParamCaption}\item[{string \&}]{license\+Plate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menu used to retrieve the license plate of the airplane to remove. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em license\+Plate} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menus_afbba2f6f55726879869013b0c6027c5b}\label{class_menus_afbba2f6f55726879869013b0c6027c5b}} 
+\index{Menus@{Menus}!remServiceMenu@{remServiceMenu}}
+\index{remServiceMenu@{remServiceMenu}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{remServiceMenu()}{remServiceMenu()}}
+{\footnotesize\ttfamily void Menus\+::rem\+Service\+Menu (\begin{DoxyParamCaption}\item[{int \&}]{service\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menu used to retrieve the service\+Id of the service to remove. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em service\+Id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menus_a456823159050f45159148ef780c509f2}\label{class_menus_a456823159050f45159148ef780c509f2}} 
+\index{Menus@{Menus}!remTimeTable@{remTimeTable}}
+\index{remTimeTable@{remTimeTable}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{remTimeTable()}{remTimeTable()}}
+{\footnotesize\ttfamily void Menus\+::rem\+Time\+Table (\begin{DoxyParamCaption}\item[{int \&}]{id,  }\item[{string \&}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menu used to remove times from a transport\textquotesingle{}s timetable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+{\em time} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menus_a817c53bc8710daad7456542cf678b41f}\label{class_menus_a817c53bc8710daad7456542cf678b41f}} 
+\index{Menus@{Menus}!remTransportationMenu@{remTransportationMenu}}
+\index{remTransportationMenu@{remTransportationMenu}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{remTransportationMenu()}{remTransportationMenu()}}
+{\footnotesize\ttfamily void Menus\+::rem\+Transportation\+Menu (\begin{DoxyParamCaption}\item[{int \&}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menu used to retrieve the id of the transport to remove. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menus_a9d64bd1577796041f08b9fb38f73c786}\label{class_menus_a9d64bd1577796041f08b9fb38f73c786}} 
+\index{Menus@{Menus}!remWorkerMenu@{remWorkerMenu}}
+\index{remWorkerMenu@{remWorkerMenu}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{remWorkerMenu()}{remWorkerMenu()}}
+{\footnotesize\ttfamily void Menus\+::rem\+Worker\+Menu (\begin{DoxyParamCaption}\item[{int \&}]{worker\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Menu used to retrieve the worker\+Id of the worker to remove. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em worker\+Id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_menus_ab79a2dd21b5b978a84d6e13d04c9d7b1}\label{class_menus_ab79a2dd21b5b978a84d6e13d04c9d7b1}} 
+\index{Menus@{Menus}!splitString@{splitString}}
+\index{splitString@{splitString}!Menus@{Menus}}
+\doxysubsubsection{\texorpdfstring{splitString()}{splitString()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Menus\+::split\+String (\begin{DoxyParamCaption}\item[{string}]{s,  }\item[{string}]{delimiter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & \\
+\hline
+{\em delimiter} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector of strings after splitting the main string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Header/Menus.\+h\item 
+Classes/Menus.\+cpp\end{DoxyCompactItemize}

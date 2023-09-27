@@ -1,0 +1,145 @@
+\hypertarget{class_flight_reg}{}\doxysection{Flight\+Reg Class Reference}
+\label{class_flight_reg}\index{FlightReg@{FlightReg}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_flight_reg_a74c83dac059eb7c44b8780730417b03e}{add\+Flight}} (\mbox{\hyperlink{class_flight}{Flight}} $\ast$flight)
+\begin{DoxyCompactList}\small\item\em adds flight to vector of flights \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_flight_reg_a91bf20d2e2f7e182eeee67d6e41739be}{add\+Flight}} (int flight\+Number, int duration, \mbox{\hyperlink{class_airplane}{Airplane}} $\ast$airplane, \mbox{\hyperlink{class_airport}{Airport}} $\ast$origin, \mbox{\hyperlink{class_airport}{Airport}} $\ast$destination, int tickets\+Available)
+\item 
+bool \mbox{\hyperlink{class_flight_reg_ab9ea7f08ee894cd976fbbd0c583877a3}{find\+Flight}} (int flight\+Number)
+\item 
+bool \mbox{\hyperlink{class_flight_reg_a1d839b0a598bc5360ba50e2233ffeed4}{rem\+Flight}} (int flight\+Number)
+\item 
+\mbox{\Hypertarget{class_flight_reg_aefcbd9264fe53bebcabe64922a797855}\label{class_flight_reg_aefcbd9264fe53bebcabe64922a797855}} 
+void \mbox{\hyperlink{class_flight_reg_aefcbd9264fe53bebcabe64922a797855}{list\+Flights}} ()
+\begin{DoxyCompactList}\small\item\em lists all flights in vector of flights \end{DoxyCompactList}\item 
+const vector$<$ \mbox{\hyperlink{class_flight}{Flight}} $\ast$ $>$ \& \mbox{\hyperlink{class_flight_reg_ac12b117ffa150e62c93c250773947349}{get\+Flights}} () const
+\item 
+\mbox{\hyperlink{class_flight}{Flight}} $\ast$ \mbox{\hyperlink{class_flight_reg_a8da7d6b96b9fed299f9b80a02ac888e0}{get\+Flight}} (int id)
+\item 
+void \mbox{\hyperlink{class_flight_reg_a93ce6938b4d7890f504179639183acf2}{rem\+Flight}} (string local)
+\item 
+void \mbox{\hyperlink{class_flight_reg_a9348945627e38199249783dea4681e94}{rem\+Flight\+Airplane}} (string airplane)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_flight_reg_a74c83dac059eb7c44b8780730417b03e}\label{class_flight_reg_a74c83dac059eb7c44b8780730417b03e}} 
+\index{FlightReg@{FlightReg}!addFlight@{addFlight}}
+\index{addFlight@{addFlight}!FlightReg@{FlightReg}}
+\doxysubsubsection{\texorpdfstring{addFlight()}{addFlight()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Flight\+Reg\+::add\+Flight (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flight}{Flight}} $\ast$}]{flight }\end{DoxyParamCaption})}
+
+
+
+adds flight to vector of flights 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flight} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_flight_reg_a91bf20d2e2f7e182eeee67d6e41739be}\label{class_flight_reg_a91bf20d2e2f7e182eeee67d6e41739be}} 
+\index{FlightReg@{FlightReg}!addFlight@{addFlight}}
+\index{addFlight@{addFlight}!FlightReg@{FlightReg}}
+\doxysubsubsection{\texorpdfstring{addFlight()}{addFlight()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Flight\+Reg\+::add\+Flight (\begin{DoxyParamCaption}\item[{int}]{flight\+Number,  }\item[{int}]{duration,  }\item[{\mbox{\hyperlink{class_airplane}{Airplane}} $\ast$}]{airplane,  }\item[{\mbox{\hyperlink{class_airport}{Airport}} $\ast$}]{origin,  }\item[{\mbox{\hyperlink{class_airport}{Airport}} $\ast$}]{destination,  }\item[{int}]{tickets\+Available }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em flight\+Number} & \\
+\hline
+{\em duration} & \\
+\hline
+{\em airplane} & \\
+\hline
+{\em origin} & \\
+\hline
+{\em destination} & \\
+\hline
+{\em tickets\+Available} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if flight with this parameters doesnt exists creates and adds to vector of flight 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_flight_reg_ab9ea7f08ee894cd976fbbd0c583877a3}\label{class_flight_reg_ab9ea7f08ee894cd976fbbd0c583877a3}} 
+\index{FlightReg@{FlightReg}!findFlight@{findFlight}}
+\index{findFlight@{findFlight}!FlightReg@{FlightReg}}
+\doxysubsubsection{\texorpdfstring{findFlight()}{findFlight()}}
+{\footnotesize\ttfamily bool Flight\+Reg\+::find\+Flight (\begin{DoxyParamCaption}\item[{int}]{flight\+Number }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em flight\+Number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if flight with flightnumbers exits 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_flight_reg_a8da7d6b96b9fed299f9b80a02ac888e0}\label{class_flight_reg_a8da7d6b96b9fed299f9b80a02ac888e0}} 
+\index{FlightReg@{FlightReg}!getFlight@{getFlight}}
+\index{getFlight@{getFlight}!FlightReg@{FlightReg}}
+\doxysubsubsection{\texorpdfstring{getFlight()}{getFlight()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_flight}{Flight}} $\ast$ Flight\+Reg\+::get\+Flight (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_flight}{Flight}} with id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_flight_reg_ac12b117ffa150e62c93c250773947349}\label{class_flight_reg_ac12b117ffa150e62c93c250773947349}} 
+\index{FlightReg@{FlightReg}!getFlights@{getFlights}}
+\index{getFlights@{getFlights}!FlightReg@{FlightReg}}
+\doxysubsubsection{\texorpdfstring{getFlights()}{getFlights()}}
+{\footnotesize\ttfamily const vector$<$ \mbox{\hyperlink{class_flight}{Flight}} $\ast$ $>$ \& Flight\+Reg\+::get\+Flights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+vector of flights 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_flight_reg_a1d839b0a598bc5360ba50e2233ffeed4}\label{class_flight_reg_a1d839b0a598bc5360ba50e2233ffeed4}} 
+\index{FlightReg@{FlightReg}!remFlight@{remFlight}}
+\index{remFlight@{remFlight}!FlightReg@{FlightReg}}
+\doxysubsubsection{\texorpdfstring{remFlight()}{remFlight()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Flight\+Reg\+::rem\+Flight (\begin{DoxyParamCaption}\item[{int}]{flight\+Number }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em flight\+Number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if flight with flightnumber is removed from vector of flights 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_flight_reg_a93ce6938b4d7890f504179639183acf2}\label{class_flight_reg_a93ce6938b4d7890f504179639183acf2}} 
+\index{FlightReg@{FlightReg}!remFlight@{remFlight}}
+\index{remFlight@{remFlight}!FlightReg@{FlightReg}}
+\doxysubsubsection{\texorpdfstring{remFlight()}{remFlight()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Flight\+Reg\+::rem\+Flight (\begin{DoxyParamCaption}\item[{string}]{local }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em local} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_flight_reg_a9348945627e38199249783dea4681e94}\label{class_flight_reg_a9348945627e38199249783dea4681e94}} 
+\index{FlightReg@{FlightReg}!remFlightAirplane@{remFlightAirplane}}
+\index{remFlightAirplane@{remFlightAirplane}!FlightReg@{FlightReg}}
+\doxysubsubsection{\texorpdfstring{remFlightAirplane()}{remFlightAirplane()}}
+{\footnotesize\ttfamily void Flight\+Reg\+::rem\+Flight\+Airplane (\begin{DoxyParamCaption}\item[{string}]{airplane }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em airplane} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Registers/Flight\+Reg.\+h\item 
+Registers/Flight\+Reg.\+cpp\end{DoxyCompactItemize}

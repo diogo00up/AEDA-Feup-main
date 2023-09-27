@@ -1,0 +1,115 @@
+\hypertarget{class_worker_reg}{}\doxysection{Worker\+Reg Class Reference}
+\label{class_worker_reg}\index{WorkerReg@{WorkerReg}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const vector$<$ \mbox{\hyperlink{class_worker}{Worker}} $\ast$ $>$ \& \mbox{\hyperlink{class_worker_reg_ab1b3c5c2f1f6749f11d9a5b65110929a}{get\+Workers}} () const
+\item 
+bool \mbox{\hyperlink{class_worker_reg_aef000b048435e93eb81a33411f583fb4}{add\+Worker}} (int worker\+Id, string name, \mbox{\hyperlink{class_date}{Date}} date, int salary)
+\item 
+void \mbox{\hyperlink{class_worker_reg_ade5490729e8b538078bf17b921d3d063}{add\+Worker}} (\mbox{\hyperlink{class_worker}{Worker}} $\ast$worker)
+\begin{DoxyCompactList}\small\item\em adds worker to vector of workers \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_worker_reg_a7c42a47fa02b1a7b9e0a77e3e1c34eaa}{rem\+Worker}} (int worker\+Id)
+\item 
+bool \mbox{\hyperlink{class_worker_reg_a2683013b558c386f6a6e5438e70e7c44}{find\+Worker}} (int worker\+Id)
+\item 
+\mbox{\Hypertarget{class_worker_reg_a3dab2afc082d24449a899ba40d72b05d}\label{class_worker_reg_a3dab2afc082d24449a899ba40d72b05d}} 
+void \mbox{\hyperlink{class_worker_reg_a3dab2afc082d24449a899ba40d72b05d}{list\+Workers}} ()
+\begin{DoxyCompactList}\small\item\em lists all workers \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_worker}{Worker}} $\ast$ \mbox{\hyperlink{class_worker_reg_a6056106362df1d30aa8ee00fb3df8f0f}{get\+Worker}} (int worker\+Id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_worker_reg_aef000b048435e93eb81a33411f583fb4}\label{class_worker_reg_aef000b048435e93eb81a33411f583fb4}} 
+\index{WorkerReg@{WorkerReg}!addWorker@{addWorker}}
+\index{addWorker@{addWorker}!WorkerReg@{WorkerReg}}
+\doxysubsubsection{\texorpdfstring{addWorker()}{addWorker()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Worker\+Reg\+::add\+Worker (\begin{DoxyParamCaption}\item[{int}]{worker\+Id,  }\item[{string}]{name,  }\item[{\mbox{\hyperlink{class_date}{Date}}}]{date,  }\item[{int}]{salary }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em worker\+Id} & \\
+\hline
+{\em name} & \\
+\hline
+{\em date} & \\
+\hline
+{\em salary} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if worker with parameters was added sucefully 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_worker_reg_ade5490729e8b538078bf17b921d3d063}\label{class_worker_reg_ade5490729e8b538078bf17b921d3d063}} 
+\index{WorkerReg@{WorkerReg}!addWorker@{addWorker}}
+\index{addWorker@{addWorker}!WorkerReg@{WorkerReg}}
+\doxysubsubsection{\texorpdfstring{addWorker()}{addWorker()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Worker\+Reg\+::add\+Worker (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_worker}{Worker}} $\ast$}]{worker }\end{DoxyParamCaption})}
+
+
+
+adds worker to vector of workers 
+
+
+\begin{DoxyParams}{Parameters}
+{\em worker} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_worker_reg_a2683013b558c386f6a6e5438e70e7c44}\label{class_worker_reg_a2683013b558c386f6a6e5438e70e7c44}} 
+\index{WorkerReg@{WorkerReg}!findWorker@{findWorker}}
+\index{findWorker@{findWorker}!WorkerReg@{WorkerReg}}
+\doxysubsubsection{\texorpdfstring{findWorker()}{findWorker()}}
+{\footnotesize\ttfamily bool Worker\+Reg\+::find\+Worker (\begin{DoxyParamCaption}\item[{int}]{worker\+Id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em worker\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if worker with worker\+Id exits 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_worker_reg_a6056106362df1d30aa8ee00fb3df8f0f}\label{class_worker_reg_a6056106362df1d30aa8ee00fb3df8f0f}} 
+\index{WorkerReg@{WorkerReg}!getWorker@{getWorker}}
+\index{getWorker@{getWorker}!WorkerReg@{WorkerReg}}
+\doxysubsubsection{\texorpdfstring{getWorker()}{getWorker()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_worker}{Worker}} $\ast$ Worker\+Reg\+::get\+Worker (\begin{DoxyParamCaption}\item[{int}]{worker\+Id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em worker\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+worker with worker\+Id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_worker_reg_ab1b3c5c2f1f6749f11d9a5b65110929a}\label{class_worker_reg_ab1b3c5c2f1f6749f11d9a5b65110929a}} 
+\index{WorkerReg@{WorkerReg}!getWorkers@{getWorkers}}
+\index{getWorkers@{getWorkers}!WorkerReg@{WorkerReg}}
+\doxysubsubsection{\texorpdfstring{getWorkers()}{getWorkers()}}
+{\footnotesize\ttfamily const vector$<$ \mbox{\hyperlink{class_worker}{Worker}} $\ast$ $>$ \& Worker\+Reg\+::get\+Workers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+vector of workers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_worker_reg_a7c42a47fa02b1a7b9e0a77e3e1c34eaa}\label{class_worker_reg_a7c42a47fa02b1a7b9e0a77e3e1c34eaa}} 
+\index{WorkerReg@{WorkerReg}!remWorker@{remWorker}}
+\index{remWorker@{remWorker}!WorkerReg@{WorkerReg}}
+\doxysubsubsection{\texorpdfstring{remWorker()}{remWorker()}}
+{\footnotesize\ttfamily bool Worker\+Reg\+::rem\+Worker (\begin{DoxyParamCaption}\item[{int}]{worker\+Id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em worker\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if worker with worker\+Id was removed sucefully 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Registers/Worker\+Reg.\+h\item 
+Registers/Worker\+Reg.\+cpp\end{DoxyCompactItemize}

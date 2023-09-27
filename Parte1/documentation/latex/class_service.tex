@@ -1,0 +1,107 @@
+\hypertarget{class_service}{}\doxysection{Service Class Reference}
+\label{class_service}\index{Service@{Service}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_service_a9c96e2c3c6d0f049ca83ad514b1a96e1}{Service}} (const \mbox{\hyperlink{class_date}{Date}} \&date, Service\+Type service\+Type, int service\+Id, \mbox{\hyperlink{class_worker}{Worker}} $\ast$worker, \mbox{\hyperlink{class_airplane}{Airplane}} $\ast$airplane)
+\item 
+const \mbox{\hyperlink{class_date}{Date}} \& \mbox{\hyperlink{class_service_aabe53f3b81f521119a3f402c91d2c9f0}{get\+Date}} () const
+\item 
+\mbox{\hyperlink{class_worker}{Worker}} $\ast$ \mbox{\hyperlink{class_service_a7c5bebfafd034efd95b83c48fcacf634}{get\+Worker}} () const
+\item 
+\mbox{\hyperlink{class_airplane}{Airplane}} $\ast$ \mbox{\hyperlink{class_service_a867eb82d276ed51899749f0a56f15e14}{get\+Airplane}} () const
+\item 
+Service\+Type \mbox{\hyperlink{class_service_a08668f7c7a5260b7dfbc029dd8562a48}{get\+Service\+Type}} () const
+\item 
+string \mbox{\hyperlink{class_service_a46296dc3c5b1e4a403cab0d7ca176a15}{get\+Service\+Type\+String}} () const
+\item 
+int \mbox{\hyperlink{class_service_a340d5a4ddb70acb13bde068594d0dae7}{get\+Service\+Id}} () const
+\item 
+\mbox{\Hypertarget{class_service_ab27531914097baafd909073ab7e1ab5e}\label{class_service_ab27531914097baafd909073ab7e1ab5e}} 
+bool {\bfseries operator$<$} (\mbox{\hyperlink{class_service}{Service}} s1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_service_a9c96e2c3c6d0f049ca83ad514b1a96e1}\label{class_service_a9c96e2c3c6d0f049ca83ad514b1a96e1}} 
+\index{Service@{Service}!Service@{Service}}
+\index{Service@{Service}!Service@{Service}}
+\doxysubsubsection{\texorpdfstring{Service()}{Service()}}
+{\footnotesize\ttfamily Service\+::\+Service (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_date}{Date}} \&}]{date,  }\item[{Service\+Type}]{service\+Type,  }\item[{int}]{service\+Id,  }\item[{\mbox{\hyperlink{class_worker}{Worker}} $\ast$}]{worker,  }\item[{\mbox{\hyperlink{class_airplane}{Airplane}} $\ast$}]{airplane }\end{DoxyParamCaption})}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em date} & \\
+\hline
+{\em service\+Type} & \\
+\hline
+{\em service\+Id} & \\
+\hline
+{\em worker} & \\
+\hline
+{\em airplane} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_service_a867eb82d276ed51899749f0a56f15e14}\label{class_service_a867eb82d276ed51899749f0a56f15e14}} 
+\index{Service@{Service}!getAirplane@{getAirplane}}
+\index{getAirplane@{getAirplane}!Service@{Service}}
+\doxysubsubsection{\texorpdfstring{getAirplane()}{getAirplane()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_airplane}{Airplane}} $\ast$ Service\+::get\+Airplane (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+a pointer to the airplane associated with the service 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_service_aabe53f3b81f521119a3f402c91d2c9f0}\label{class_service_aabe53f3b81f521119a3f402c91d2c9f0}} 
+\index{Service@{Service}!getDate@{getDate}}
+\index{getDate@{getDate}!Service@{Service}}
+\doxysubsubsection{\texorpdfstring{getDate()}{getDate()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_date}{Date}} \& Service\+::get\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the date of the service 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_service_a340d5a4ddb70acb13bde068594d0dae7}\label{class_service_a340d5a4ddb70acb13bde068594d0dae7}} 
+\index{Service@{Service}!getServiceId@{getServiceId}}
+\index{getServiceId@{getServiceId}!Service@{Service}}
+\doxysubsubsection{\texorpdfstring{getServiceId()}{getServiceId()}}
+{\footnotesize\ttfamily int Service\+::get\+Service\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the service id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_service_a08668f7c7a5260b7dfbc029dd8562a48}\label{class_service_a08668f7c7a5260b7dfbc029dd8562a48}} 
+\index{Service@{Service}!getServiceType@{getServiceType}}
+\index{getServiceType@{getServiceType}!Service@{Service}}
+\doxysubsubsection{\texorpdfstring{getServiceType()}{getServiceType()}}
+{\footnotesize\ttfamily Service\+Type Service\+::get\+Service\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the service type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_service_a46296dc3c5b1e4a403cab0d7ca176a15}\label{class_service_a46296dc3c5b1e4a403cab0d7ca176a15}} 
+\index{Service@{Service}!getServiceTypeString@{getServiceTypeString}}
+\index{getServiceTypeString@{getServiceTypeString}!Service@{Service}}
+\doxysubsubsection{\texorpdfstring{getServiceTypeString()}{getServiceTypeString()}}
+{\footnotesize\ttfamily string Service\+::get\+Service\+Type\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+the service type as a string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_service_a7c5bebfafd034efd95b83c48fcacf634}\label{class_service_a7c5bebfafd034efd95b83c48fcacf634}} 
+\index{Service@{Service}!getWorker@{getWorker}}
+\index{getWorker@{getWorker}!Service@{Service}}
+\doxysubsubsection{\texorpdfstring{getWorker()}{getWorker()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_worker}{Worker}} $\ast$ Service\+::get\+Worker (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+a pointer to the worker associated with the service 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Header/Service.\+h\item 
+Classes/Service.\+cpp\end{DoxyCompactItemize}

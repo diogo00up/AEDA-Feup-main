@@ -1,0 +1,164 @@
+\hypertarget{class_ticket}{}\doxysection{Ticket Class Reference}
+\label{class_ticket}\index{Ticket@{Ticket}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ticket_a050ade72ca12dc001e4c16d9fd4ebdc1}{Ticket}} (\mbox{\hyperlink{class_flight}{Flight}} $\ast$flight, \mbox{\hyperlink{class_client}{Client}} $\ast$client, int ticket\+Id, const vector$<$ \mbox{\hyperlink{class_suit_case}{Suit\+Case}} $\ast$ $>$ \&suit\+Cases, bool checked\+In, int n\+Suit\+Cases\+Check\+In)
+\item 
+\mbox{\hyperlink{class_ticket_acaeb6ec3ade8645354c5a3c07c1acdff}{Ticket}} (\mbox{\hyperlink{class_flight}{Flight}} $\ast$flight, \mbox{\hyperlink{class_client}{Client}} $\ast$client, int ticket\+Id, bool checked\+In, int n\+Suit\+Cases\+Check\+In)
+\item 
+\mbox{\Hypertarget{class_ticket_ab6c1dc46d72a12bf553915b195b941ae}\label{class_ticket_ab6c1dc46d72a12bf553915b195b941ae}} 
+void \mbox{\hyperlink{class_ticket_ab6c1dc46d72a12bf553915b195b941ae}{add\+Suit\+Case}} ()
+\begin{DoxyCompactList}\small\item\em adds a new suitcase to ticket \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flight}{Flight}} $\ast$ \mbox{\hyperlink{class_ticket_a474860095176e2220e3dce341ba7616f}{get\+Flight}} () const
+\item 
+\mbox{\hyperlink{class_client}{Client}} $\ast$ \mbox{\hyperlink{class_ticket_ab8f42afcf00585e696126f99513a9023}{get\+Client}} () const
+\item 
+int \mbox{\hyperlink{class_ticket_af0ded2f87960b271214f207f4a2ebef4}{get\+Ticket\+Id}} () const
+\item 
+const vector$<$ \mbox{\hyperlink{class_suit_case}{Suit\+Case}} $\ast$ $>$ \& \mbox{\hyperlink{class_ticket_af3125cab986d888211b0fff93ab2cb66}{get\+Suit\+Cases}} () const
+\item 
+bool \mbox{\hyperlink{class_ticket_a0ac1ca11418718dde13d3ff83fdb617b}{is\+Checked\+In}} () const
+\item 
+void \mbox{\hyperlink{class_ticket_ae02bc5881c7810d3860c75fb3023b576}{set\+Checked\+In}} (bool checked\+In)
+\begin{DoxyCompactList}\small\item\em sets new value for bool checked\+In \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ticket_a8c3caacb4867c4696a09a7223129fbcb}{set\+Number\+Of\+Checked\+In\+Suit\+Cases}} (int number\+Of\+Checked\+In\+Suit\+Cases)
+\begin{DoxyCompactList}\small\item\em changes the number of checked in suitcases \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_ticket_aa71acb3abd2922e0fabc00ba0387771d}{get\+Number\+Of\+Checked\+In\+Suit\+Cases}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ticket_a050ade72ca12dc001e4c16d9fd4ebdc1}\label{class_ticket_a050ade72ca12dc001e4c16d9fd4ebdc1}} 
+\index{Ticket@{Ticket}!Ticket@{Ticket}}
+\index{Ticket@{Ticket}!Ticket@{Ticket}}
+\doxysubsubsection{\texorpdfstring{Ticket()}{Ticket()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Ticket\+::\+Ticket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flight}{Flight}} $\ast$}]{flight,  }\item[{\mbox{\hyperlink{class_client}{Client}} $\ast$}]{client,  }\item[{int}]{ticket\+Id,  }\item[{const vector$<$ \mbox{\hyperlink{class_suit_case}{Suit\+Case}} $\ast$ $>$ \&}]{suit\+Cases,  }\item[{bool}]{checked\+In,  }\item[{int}]{n\+Suit\+Cases\+Check\+In }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em flight} & \\
+\hline
+{\em client} & \\
+\hline
+{\em ticket\+Id} & \\
+\hline
+{\em suit\+Cases} & \\
+\hline
+{\em checked\+In} & \\
+\hline
+{\em n\+Suit\+Cases\+Check\+In} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ticket_acaeb6ec3ade8645354c5a3c07c1acdff}\label{class_ticket_acaeb6ec3ade8645354c5a3c07c1acdff}} 
+\index{Ticket@{Ticket}!Ticket@{Ticket}}
+\index{Ticket@{Ticket}!Ticket@{Ticket}}
+\doxysubsubsection{\texorpdfstring{Ticket()}{Ticket()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Ticket\+::\+Ticket (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flight}{Flight}} $\ast$}]{flight,  }\item[{\mbox{\hyperlink{class_client}{Client}} $\ast$}]{client,  }\item[{int}]{ticket\+Id,  }\item[{bool}]{checked\+In,  }\item[{int}]{n\+Suit\+Cases\+Check\+In }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em flight} & \\
+\hline
+{\em client} & \\
+\hline
+{\em ticket\+Id} & \\
+\hline
+{\em checked\+In} & \\
+\hline
+{\em n\+Suit\+Cases\+Check\+In} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ticket_ab8f42afcf00585e696126f99513a9023}\label{class_ticket_ab8f42afcf00585e696126f99513a9023}} 
+\index{Ticket@{Ticket}!getClient@{getClient}}
+\index{getClient@{getClient}!Ticket@{Ticket}}
+\doxysubsubsection{\texorpdfstring{getClient()}{getClient()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_client}{Client}} $\ast$ Ticket\+::get\+Client (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+client associated with ticket 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ticket_a474860095176e2220e3dce341ba7616f}\label{class_ticket_a474860095176e2220e3dce341ba7616f}} 
+\index{Ticket@{Ticket}!getFlight@{getFlight}}
+\index{getFlight@{getFlight}!Ticket@{Ticket}}
+\doxysubsubsection{\texorpdfstring{getFlight()}{getFlight()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_flight}{Flight}} $\ast$ Ticket\+::get\+Flight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_flight}{Flight}} associated with ticket 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ticket_aa71acb3abd2922e0fabc00ba0387771d}\label{class_ticket_aa71acb3abd2922e0fabc00ba0387771d}} 
+\index{Ticket@{Ticket}!getNumberOfCheckedInSuitCases@{getNumberOfCheckedInSuitCases}}
+\index{getNumberOfCheckedInSuitCases@{getNumberOfCheckedInSuitCases}!Ticket@{Ticket}}
+\doxysubsubsection{\texorpdfstring{getNumberOfCheckedInSuitCases()}{getNumberOfCheckedInSuitCases()}}
+{\footnotesize\ttfamily int Ticket\+::get\+Number\+Of\+Checked\+In\+Suit\+Cases (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+number of checked in suitcases 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ticket_af3125cab986d888211b0fff93ab2cb66}\label{class_ticket_af3125cab986d888211b0fff93ab2cb66}} 
+\index{Ticket@{Ticket}!getSuitCases@{getSuitCases}}
+\index{getSuitCases@{getSuitCases}!Ticket@{Ticket}}
+\doxysubsubsection{\texorpdfstring{getSuitCases()}{getSuitCases()}}
+{\footnotesize\ttfamily const vector$<$ \mbox{\hyperlink{class_suit_case}{Suit\+Case}} $\ast$ $>$ \& Ticket\+::get\+Suit\+Cases (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+vector of suitcases 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ticket_af0ded2f87960b271214f207f4a2ebef4}\label{class_ticket_af0ded2f87960b271214f207f4a2ebef4}} 
+\index{Ticket@{Ticket}!getTicketId@{getTicketId}}
+\index{getTicketId@{getTicketId}!Ticket@{Ticket}}
+\doxysubsubsection{\texorpdfstring{getTicketId()}{getTicketId()}}
+{\footnotesize\ttfamily int Ticket\+::get\+Ticket\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+ticket ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ticket_a0ac1ca11418718dde13d3ff83fdb617b}\label{class_ticket_a0ac1ca11418718dde13d3ff83fdb617b}} 
+\index{Ticket@{Ticket}!isCheckedIn@{isCheckedIn}}
+\index{isCheckedIn@{isCheckedIn}!Ticket@{Ticket}}
+\doxysubsubsection{\texorpdfstring{isCheckedIn()}{isCheckedIn()}}
+{\footnotesize\ttfamily bool Ticket\+::is\+Checked\+In (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+true if ticket is already checked in 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ticket_ae02bc5881c7810d3860c75fb3023b576}\label{class_ticket_ae02bc5881c7810d3860c75fb3023b576}} 
+\index{Ticket@{Ticket}!setCheckedIn@{setCheckedIn}}
+\index{setCheckedIn@{setCheckedIn}!Ticket@{Ticket}}
+\doxysubsubsection{\texorpdfstring{setCheckedIn()}{setCheckedIn()}}
+{\footnotesize\ttfamily void Ticket\+::set\+Checked\+In (\begin{DoxyParamCaption}\item[{bool}]{checked\+In }\end{DoxyParamCaption})}
+
+
+
+sets new value for bool checked\+In 
+
+
+\begin{DoxyParams}{Parameters}
+{\em checked\+In} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ticket_a8c3caacb4867c4696a09a7223129fbcb}\label{class_ticket_a8c3caacb4867c4696a09a7223129fbcb}} 
+\index{Ticket@{Ticket}!setNumberOfCheckedInSuitCases@{setNumberOfCheckedInSuitCases}}
+\index{setNumberOfCheckedInSuitCases@{setNumberOfCheckedInSuitCases}!Ticket@{Ticket}}
+\doxysubsubsection{\texorpdfstring{setNumberOfCheckedInSuitCases()}{setNumberOfCheckedInSuitCases()}}
+{\footnotesize\ttfamily void Ticket\+::set\+Number\+Of\+Checked\+In\+Suit\+Cases (\begin{DoxyParamCaption}\item[{int}]{number\+Of\+Checked\+In\+Suit\+Cases }\end{DoxyParamCaption})}
+
+
+
+changes the number of checked in suitcases 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\+Of\+Checked\+In\+Suit\+Cases} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Header/Ticket.\+h\item 
+Classes/Ticket.\+cpp\end{DoxyCompactItemize}

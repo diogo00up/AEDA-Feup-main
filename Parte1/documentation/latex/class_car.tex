@@ -1,0 +1,91 @@
+\hypertarget{class_car}{}\doxysection{Car Class Reference}
+\label{class_car}\index{Car@{Car}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_car_ac7077740616e3763afe2a308d4007e99}\label{class_car_ac7077740616e3763afe2a308d4007e99}} 
+{\bfseries Car} (int number\+Of\+Carriages, int stack\+Size, int number\+Of\+Stacks\+Per\+Carriage)
+\item 
+int \mbox{\hyperlink{class_car_a36b94b8a6d6987393c9fbf5dc009eeee}{get\+Number\+Of\+Carriages}} () const
+\item 
+int \mbox{\hyperlink{class_car_a4b7782fa095e1abb617c3609d9442cf2}{get\+Stack\+Size}} () const
+\item 
+int \mbox{\hyperlink{class_car_a3a05a06459dd2ca133a7bfc64891ac7a}{get\+Number\+Of\+Stacks\+Per\+Carriage}} () const
+\item 
+vector$<$ \mbox{\hyperlink{class_carriage}{Carriage}} $\ast$ $>$ \& \mbox{\hyperlink{class_car_af03346c87edaf98884489218d886c302}{get\+Carro}} ()
+\item 
+bool \mbox{\hyperlink{class_car_ab373ef4f75f105077a791764ec850fc1}{add}} (\mbox{\hyperlink{class_suit_case}{Suit\+Case}} $\ast$suit\+Case)
+\item 
+\mbox{\Hypertarget{class_car_a9a4d7f2375beb90dcd3b3d6dc377e22d}\label{class_car_a9a4d7f2375beb90dcd3b3d6dc377e22d}} 
+void \mbox{\hyperlink{class_car_a9a4d7f2375beb90dcd3b3d6dc377e22d}{print\+Car}} ()
+\begin{DoxyCompactList}\small\item\em prints information about the car \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_car_aace31c7e04ac3931d86415b30eb54103}{is\+Full}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_car_ab373ef4f75f105077a791764ec850fc1}\label{class_car_ab373ef4f75f105077a791764ec850fc1}} 
+\index{Car@{Car}!add@{add}}
+\index{add@{add}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily bool Car\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_suit_case}{Suit\+Case}} $\ast$}]{suit\+Case }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em suit\+Case} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if suitcase was added sucefully 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_af03346c87edaf98884489218d886c302}\label{class_car_af03346c87edaf98884489218d886c302}} 
+\index{Car@{Car}!getCarro@{getCarro}}
+\index{getCarro@{getCarro}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{getCarro()}{getCarro()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_carriage}{Carriage}} $\ast$ $>$ \& Car\+::get\+Carro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+vector of carriages 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_a36b94b8a6d6987393c9fbf5dc009eeee}\label{class_car_a36b94b8a6d6987393c9fbf5dc009eeee}} 
+\index{Car@{Car}!getNumberOfCarriages@{getNumberOfCarriages}}
+\index{getNumberOfCarriages@{getNumberOfCarriages}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{getNumberOfCarriages()}{getNumberOfCarriages()}}
+{\footnotesize\ttfamily int Car\+::get\+Number\+Of\+Carriages (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+numbers of carriaes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_a3a05a06459dd2ca133a7bfc64891ac7a}\label{class_car_a3a05a06459dd2ca133a7bfc64891ac7a}} 
+\index{Car@{Car}!getNumberOfStacksPerCarriage@{getNumberOfStacksPerCarriage}}
+\index{getNumberOfStacksPerCarriage@{getNumberOfStacksPerCarriage}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{getNumberOfStacksPerCarriage()}{getNumberOfStacksPerCarriage()}}
+{\footnotesize\ttfamily int Car\+::get\+Number\+Of\+Stacks\+Per\+Carriage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+numbers of stacks in each carriage 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_a4b7782fa095e1abb617c3609d9442cf2}\label{class_car_a4b7782fa095e1abb617c3609d9442cf2}} 
+\index{Car@{Car}!getStackSize@{getStackSize}}
+\index{getStackSize@{getStackSize}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{getStackSize()}{getStackSize()}}
+{\footnotesize\ttfamily int Car\+::get\+Stack\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+size of stack 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_car_aace31c7e04ac3931d86415b30eb54103}\label{class_car_aace31c7e04ac3931d86415b30eb54103}} 
+\index{Car@{Car}!isFull@{isFull}}
+\index{isFull@{isFull}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{isFull()}{isFull()}}
+{\footnotesize\ttfamily bool Car\+::is\+Full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+true if car is full 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Registers/Car.\+h\item 
+Registers/Car.\+cpp\end{DoxyCompactItemize}

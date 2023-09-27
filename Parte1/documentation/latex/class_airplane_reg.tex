@@ -1,0 +1,116 @@
+\hypertarget{class_airplane_reg}{}\doxysection{Airplane\+Reg Class Reference}
+\label{class_airplane_reg}\index{AirplaneReg@{AirplaneReg}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_airplane_reg_ac3ae330b1c88cc4132f66aa5eebd4e5f}{find\+Airplane}} (string license\+Plate)
+\item 
+void \mbox{\hyperlink{class_airplane_reg_a1e8e72d37142b345bcd6be4922a66af5}{addplane}} (\mbox{\hyperlink{class_airplane}{Airplane}} $\ast$plane)
+\begin{DoxyCompactList}\small\item\em adds a plane to airplanes \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_airplane_reg_a802c6b9e45fa734ea30612a4373f0746}{addplane}} (string license\+Plate, string type, int capacity)
+\item 
+bool \mbox{\hyperlink{class_airplane_reg_aec63a3038649b3dcacc060e5b3265262}{rem\+Plane}} (string license\+Plate)
+\item 
+vector$<$ \mbox{\hyperlink{class_airplane}{Airplane}} $\ast$ $>$ \mbox{\hyperlink{class_airplane_reg_a019fdaad2f2a472f9bc402ee9b096993}{get\+Airplanes}} ()
+\item 
+\mbox{\hyperlink{class_airplane}{Airplane}} $\ast$ \mbox{\hyperlink{class_airplane_reg_a082a6f8a1e0867a821791eea35075fd9}{get\+Airplane}} (string license\+Plate)
+\item 
+\mbox{\Hypertarget{class_airplane_reg_ad30da007224164a4fa93cec0711015b9}\label{class_airplane_reg_ad30da007224164a4fa93cec0711015b9}} 
+void \mbox{\hyperlink{class_airplane_reg_ad30da007224164a4fa93cec0711015b9}{list\+Airplanes}} ()
+\begin{DoxyCompactList}\small\item\em lists all planes from airplanes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_airplane_reg_a660f1c6d9cc450fef24a0df76545a8f1}\label{class_airplane_reg_a660f1c6d9cc450fef24a0df76545a8f1}} 
+void \mbox{\hyperlink{class_airplane_reg_a660f1c6d9cc450fef24a0df76545a8f1}{sort\+Planeby\+Capacity}} ()
+\begin{DoxyCompactList}\small\item\em sorts plane vector by plane capaicty \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_airplane_reg_a1e8e72d37142b345bcd6be4922a66af5}\label{class_airplane_reg_a1e8e72d37142b345bcd6be4922a66af5}} 
+\index{AirplaneReg@{AirplaneReg}!addplane@{addplane}}
+\index{addplane@{addplane}!AirplaneReg@{AirplaneReg}}
+\doxysubsubsection{\texorpdfstring{addplane()}{addplane()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Airplane\+Reg\+::addplane (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_airplane}{Airplane}} $\ast$}]{plane }\end{DoxyParamCaption})}
+
+
+
+adds a plane to airplanes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plane} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_airplane_reg_a802c6b9e45fa734ea30612a4373f0746}\label{class_airplane_reg_a802c6b9e45fa734ea30612a4373f0746}} 
+\index{AirplaneReg@{AirplaneReg}!addplane@{addplane}}
+\index{addplane@{addplane}!AirplaneReg@{AirplaneReg}}
+\doxysubsubsection{\texorpdfstring{addplane()}{addplane()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Airplane\+Reg\+::addplane (\begin{DoxyParamCaption}\item[{string}]{license\+Plate,  }\item[{string}]{type,  }\item[{int}]{capacity }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em license\+Plate} & \\
+\hline
+{\em type} & \\
+\hline
+{\em capacity} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if plane was created and inserted 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_airplane_reg_ac3ae330b1c88cc4132f66aa5eebd4e5f}\label{class_airplane_reg_ac3ae330b1c88cc4132f66aa5eebd4e5f}} 
+\index{AirplaneReg@{AirplaneReg}!findAirplane@{findAirplane}}
+\index{findAirplane@{findAirplane}!AirplaneReg@{AirplaneReg}}
+\doxysubsubsection{\texorpdfstring{findAirplane()}{findAirplane()}}
+{\footnotesize\ttfamily bool Airplane\+Reg\+::find\+Airplane (\begin{DoxyParamCaption}\item[{string}]{license\+Plate }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em license\+Plate} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if plane with license\+Plate exists 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_airplane_reg_a082a6f8a1e0867a821791eea35075fd9}\label{class_airplane_reg_a082a6f8a1e0867a821791eea35075fd9}} 
+\index{AirplaneReg@{AirplaneReg}!getAirplane@{getAirplane}}
+\index{getAirplane@{getAirplane}!AirplaneReg@{AirplaneReg}}
+\doxysubsubsection{\texorpdfstring{getAirplane()}{getAirplane()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_airplane}{Airplane}} $\ast$ Airplane\+Reg\+::get\+Airplane (\begin{DoxyParamCaption}\item[{string}]{license\+Plate }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em license\+Plate} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+plane with license\+Plate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_airplane_reg_a019fdaad2f2a472f9bc402ee9b096993}\label{class_airplane_reg_a019fdaad2f2a472f9bc402ee9b096993}} 
+\index{AirplaneReg@{AirplaneReg}!getAirplanes@{getAirplanes}}
+\index{getAirplanes@{getAirplanes}!AirplaneReg@{AirplaneReg}}
+\doxysubsubsection{\texorpdfstring{getAirplanes()}{getAirplanes()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_airplane}{Airplane}} $\ast$ $>$ Airplane\+Reg\+::get\+Airplanes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+planes vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_airplane_reg_aec63a3038649b3dcacc060e5b3265262}\label{class_airplane_reg_aec63a3038649b3dcacc060e5b3265262}} 
+\index{AirplaneReg@{AirplaneReg}!remPlane@{remPlane}}
+\index{remPlane@{remPlane}!AirplaneReg@{AirplaneReg}}
+\doxysubsubsection{\texorpdfstring{remPlane()}{remPlane()}}
+{\footnotesize\ttfamily bool Airplane\+Reg\+::rem\+Plane (\begin{DoxyParamCaption}\item[{string}]{license\+Plate }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em license\+Plate} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if planes was removed sucefully 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Registers/Airplane\+Reg.\+h\item 
+Registers/Airplane\+Reg.\+cpp\end{DoxyCompactItemize}

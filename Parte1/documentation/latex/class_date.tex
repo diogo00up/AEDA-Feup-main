@@ -1,0 +1,193 @@
+\hypertarget{class_date}{}\doxysection{Date Class Reference}
+\label{class_date}\index{Date@{Date}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}{Date}} ()
+\item 
+\mbox{\hyperlink{class_date_a3c18cf6ead562e5bf45feeaa94ef853c}{Date}} (string \mbox{\hyperlink{class_date}{Date}})
+\item 
+\mbox{\hyperlink{class_date_a73ea91f53dc85192340ca332413c865f}{Date}} (unsigned day, unsigned month, int year)
+\item 
+\mbox{\hyperlink{class_date_ad60a06bab3db402303ea74ebc409ce29}{Date}} (const \mbox{\hyperlink{class_date}{Date}} \&date)
+\item 
+int \mbox{\hyperlink{class_date_aaa938d8473d391e314d186823b280873}{difference\+Between}} (const \mbox{\hyperlink{class_date}{Date}} \&d1) const
+\item 
+unsigned int \mbox{\hyperlink{class_date_a13855b25efb79eaf7dccf08555421a1d}{get\+Day}} () const
+\item 
+unsigned int \mbox{\hyperlink{class_date_a6152596dcf2e1e78e2095ea518de59e7}{get\+Month}} () const
+\item 
+int \mbox{\hyperlink{class_date_a8b0869f34c2b38d108ab83ee2e770e5d}{get\+Year}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_date_ab57c765ef19718540ac3d7c55a553ce2}{has31}} (unsigned month)
+\item 
+static bool \mbox{\hyperlink{class_date_a6fc6234821bfcd26f77b4510e116d611}{is\+Leap\+Year}} (int year)
+\item 
+static \mbox{\hyperlink{class_date}{Date}} \& \mbox{\hyperlink{class_date_a81d18a5d7c2126e4b51db73ba15be52d}{get\+Current\+Date}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{class_date_a7396647c65aa5f260ed37f8fc369fe5f}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{class_date}{Date}} \&date)
+\item 
+\mbox{\Hypertarget{class_date_a5a3f411cbd59e9ecb90b2f8e6aaea551}\label{class_date_a5a3f411cbd59e9ecb90b2f8e6aaea551}} 
+bool {\bfseries operator$<$} (const \mbox{\hyperlink{class_date}{Date}} \&d1, const \mbox{\hyperlink{class_date}{Date}} \&d2)
+\item 
+\mbox{\Hypertarget{class_date_a18dc8aca1ca4d8cadc2b464db984135b}\label{class_date_a18dc8aca1ca4d8cadc2b464db984135b}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{class_date}{Date}} \&d1, const \mbox{\hyperlink{class_date}{Date}} \&d2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}\label{class_date_a4e59ed4ba66eec61c27460c5d09fa1bd}} 
+\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Date\+::\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Empty constructor, default date is 1-\/1-\/0 \mbox{\Hypertarget{class_date_a3c18cf6ead562e5bf45feeaa94ef853c}\label{class_date_a3c18cf6ead562e5bf45feeaa94ef853c}} 
+\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Date\+::\+Date (\begin{DoxyParamCaption}\item[{string}]{Date }\end{DoxyParamCaption})}
+
+Constructor\+: turns a string on the format dd-\/mm-\/yyyy to a date 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_date}{Date}}} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_date_a73ea91f53dc85192340ca332413c865f}\label{class_date_a73ea91f53dc85192340ca332413c865f}} 
+\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Date\+::\+Date (\begin{DoxyParamCaption}\item[{unsigned}]{day,  }\item[{unsigned}]{month,  }\item[{int}]{year }\end{DoxyParamCaption})}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em day} & \\
+\hline
+{\em month} & \\
+\hline
+{\em year} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_date_ad60a06bab3db402303ea74ebc409ce29}\label{class_date_ad60a06bab3db402303ea74ebc409ce29}} 
+\index{Date@{Date}!Date@{Date}}
+\index{Date@{Date}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{Date()}{Date()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Date\+::\+Date (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_date}{Date}} \&}]{date }\end{DoxyParamCaption})}
+
+Copy constructor 
+\begin{DoxyParams}{Parameters}
+{\em date} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_date_aaa938d8473d391e314d186823b280873}\label{class_date_aaa938d8473d391e314d186823b280873}} 
+\index{Date@{Date}!differenceBetween@{differenceBetween}}
+\index{differenceBetween@{differenceBetween}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{differenceBetween()}{differenceBetween()}}
+{\footnotesize\ttfamily int Date\+::difference\+Between (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_date}{Date}} \&}]{d1 }\end{DoxyParamCaption}) const}
+
+
+\begin{DoxyParams}{Parameters}
+{\em d1} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the difference, in days, of the date and d1 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_date_a81d18a5d7c2126e4b51db73ba15be52d}\label{class_date_a81d18a5d7c2126e4b51db73ba15be52d}} 
+\index{Date@{Date}!getCurrentDate@{getCurrentDate}}
+\index{getCurrentDate@{getCurrentDate}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{getCurrentDate()}{getCurrentDate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_date}{Date}} \& Date\+::get\+Current\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{class_date}{Date}} with the values of the current system 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_date_a13855b25efb79eaf7dccf08555421a1d}\label{class_date_a13855b25efb79eaf7dccf08555421a1d}} 
+\index{Date@{Date}!getDay@{getDay}}
+\index{getDay@{getDay}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{getDay()}{getDay()}}
+{\footnotesize\ttfamily unsigned int Date\+::get\+Day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+day 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_date_a6152596dcf2e1e78e2095ea518de59e7}\label{class_date_a6152596dcf2e1e78e2095ea518de59e7}} 
+\index{Date@{Date}!getMonth@{getMonth}}
+\index{getMonth@{getMonth}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{getMonth()}{getMonth()}}
+{\footnotesize\ttfamily unsigned int Date\+::get\+Month (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+month 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_date_a8b0869f34c2b38d108ab83ee2e770e5d}\label{class_date_a8b0869f34c2b38d108ab83ee2e770e5d}} 
+\index{Date@{Date}!getYear@{getYear}}
+\index{getYear@{getYear}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{getYear()}{getYear()}}
+{\footnotesize\ttfamily int Date\+::get\+Year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+year 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_date_ab57c765ef19718540ac3d7c55a553ce2}\label{class_date_ab57c765ef19718540ac3d7c55a553ce2}} 
+\index{Date@{Date}!has31@{has31}}
+\index{has31@{has31}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{has31()}{has31()}}
+{\footnotesize\ttfamily bool Date\+::has31 (\begin{DoxyParamCaption}\item[{unsigned}]{month }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em month} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the month received has 31 days 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_date_a6fc6234821bfcd26f77b4510e116d611}\label{class_date_a6fc6234821bfcd26f77b4510e116d611}} 
+\index{Date@{Date}!isLeapYear@{isLeapYear}}
+\index{isLeapYear@{isLeapYear}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{isLeapYear()}{isLeapYear()}}
+{\footnotesize\ttfamily bool Date\+::is\+Leap\+Year (\begin{DoxyParamCaption}\item[{int}]{year }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if the year passed is leap year 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_date_a7396647c65aa5f260ed37f8fc369fe5f}\label{class_date_a7396647c65aa5f260ed37f8fc369fe5f}} 
+\index{Date@{Date}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Date@{Date}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_date}{Date}} \&}]{date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & \\
+\hline
+{\em date} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an ostream with the information about the date 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Header/Date.\+h\item 
+Classes/Date.\+cpp\end{DoxyCompactItemize}

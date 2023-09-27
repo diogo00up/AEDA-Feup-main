@@ -1,0 +1,113 @@
+\hypertarget{class_client_reg}{}\doxysection{Client\+Reg Class Reference}
+\label{class_client_reg}\index{ClientReg@{ClientReg}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const vector$<$ \mbox{\hyperlink{class_client}{Client}} $\ast$ $>$ \& \mbox{\hyperlink{class_client_reg_aa557b2afdca95a212be9432985c03374}{get\+Clients}} () const
+\item 
+bool \mbox{\hyperlink{class_client_reg_a3bcd93cbe34b3890a6bf73f4337e79c1}{add\+Client}} (int client\+Id, string name, \mbox{\hyperlink{class_date}{Date}} date)
+\item 
+void \mbox{\hyperlink{class_client_reg_af7742aa6d72dd8e248c04f8f5c75a459}{add\+Client}} (\mbox{\hyperlink{class_client}{Client}} $\ast$client)
+\begin{DoxyCompactList}\small\item\em adds client to vector of clients \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_client_reg_a70ecdb527524e71b2f05fab1dd573f54}{find\+Client}} (int client\+Id)
+\item 
+bool \mbox{\hyperlink{class_client_reg_a8dc118e4811087315f6aed4a1c4f51ad}{rem\+Client}} (int client\+Id)
+\item 
+\mbox{\hyperlink{class_client}{Client}} $\ast$ \mbox{\hyperlink{class_client_reg_ad3ccf3fe7bd4f9891f4ae88d1929e1b2}{get\+Client}} (int id)
+\item 
+\mbox{\Hypertarget{class_client_reg_ad8a651f23a62c3e5e8b0b35cc9fcec81}\label{class_client_reg_ad8a651f23a62c3e5e8b0b35cc9fcec81}} 
+void \mbox{\hyperlink{class_client_reg_ad8a651f23a62c3e5e8b0b35cc9fcec81}{list\+Clients}} ()
+\begin{DoxyCompactList}\small\item\em lists all clients in vector clients \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_client_reg_af7742aa6d72dd8e248c04f8f5c75a459}\label{class_client_reg_af7742aa6d72dd8e248c04f8f5c75a459}} 
+\index{ClientReg@{ClientReg}!addClient@{addClient}}
+\index{addClient@{addClient}!ClientReg@{ClientReg}}
+\doxysubsubsection{\texorpdfstring{addClient()}{addClient()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Client\+Reg\+::add\+Client (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_client}{Client}} $\ast$}]{client }\end{DoxyParamCaption})}
+
+
+
+adds client to vector of clients 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_client_reg_a3bcd93cbe34b3890a6bf73f4337e79c1}\label{class_client_reg_a3bcd93cbe34b3890a6bf73f4337e79c1}} 
+\index{ClientReg@{ClientReg}!addClient@{addClient}}
+\index{addClient@{addClient}!ClientReg@{ClientReg}}
+\doxysubsubsection{\texorpdfstring{addClient()}{addClient()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Client\+Reg\+::add\+Client (\begin{DoxyParamCaption}\item[{int}]{client\+Id,  }\item[{string}]{name,  }\item[{\mbox{\hyperlink{class_date}{Date}}}]{date }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\+Id} & \\
+\hline
+{\em name} & \\
+\hline
+{\em date} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if doesnt exist adds clients sucesully to vector of clients 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_client_reg_a70ecdb527524e71b2f05fab1dd573f54}\label{class_client_reg_a70ecdb527524e71b2f05fab1dd573f54}} 
+\index{ClientReg@{ClientReg}!findClient@{findClient}}
+\index{findClient@{findClient}!ClientReg@{ClientReg}}
+\doxysubsubsection{\texorpdfstring{findClient()}{findClient()}}
+{\footnotesize\ttfamily bool Client\+Reg\+::find\+Client (\begin{DoxyParamCaption}\item[{int}]{client\+Id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if client with client\+Id exists 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_client_reg_ad3ccf3fe7bd4f9891f4ae88d1929e1b2}\label{class_client_reg_ad3ccf3fe7bd4f9891f4ae88d1929e1b2}} 
+\index{ClientReg@{ClientReg}!getClient@{getClient}}
+\index{getClient@{getClient}!ClientReg@{ClientReg}}
+\doxysubsubsection{\texorpdfstring{getClient()}{getClient()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_client}{Client}} $\ast$ Client\+Reg\+::get\+Client (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+client with id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_client_reg_aa557b2afdca95a212be9432985c03374}\label{class_client_reg_aa557b2afdca95a212be9432985c03374}} 
+\index{ClientReg@{ClientReg}!getClients@{getClients}}
+\index{getClients@{getClients}!ClientReg@{ClientReg}}
+\doxysubsubsection{\texorpdfstring{getClients()}{getClients()}}
+{\footnotesize\ttfamily const vector$<$ \mbox{\hyperlink{class_client}{Client}} $\ast$ $>$ \& Client\+Reg\+::get\+Clients (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+vector of clients 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_client_reg_a8dc118e4811087315f6aed4a1c4f51ad}\label{class_client_reg_a8dc118e4811087315f6aed4a1c4f51ad}} 
+\index{ClientReg@{ClientReg}!remClient@{remClient}}
+\index{remClient@{remClient}!ClientReg@{ClientReg}}
+\doxysubsubsection{\texorpdfstring{remClient()}{remClient()}}
+{\footnotesize\ttfamily bool Client\+Reg\+::rem\+Client (\begin{DoxyParamCaption}\item[{int}]{client\+Id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em client\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+if client with client\+Id was removed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Registers/Client\+Reg.\+h\item 
+Registers/Client\+Reg.\+cpp\end{DoxyCompactItemize}

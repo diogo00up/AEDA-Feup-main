@@ -1,0 +1,185 @@
+\hypertarget{class_transportation_local_reg}{}\doxysection{Transportation\+Local\+Reg Class Reference}
+\label{class_transportation_local_reg}\index{TransportationLocalReg@{TransportationLocalReg}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ \mbox{\hyperlink{class_transportation_local}{Transportation\+Local}} $\ast$ $>$ \& \mbox{\hyperlink{class_transportation_local_reg_a619fb10b32bc5eb2e836542a2f4ed919}{get\+Transportation\+Locals}} () const
+\item 
+void \mbox{\hyperlink{class_transportation_local_reg_a58ac035f051e88365dfcc6da94d25485}{add\+Transportation\+Local}} (\mbox{\hyperlink{class_transportation_local}{Transportation\+Local}} $\ast$transportation\+Local)
+\begin{DoxyCompactList}\small\item\em adds transportation\+Local to \mbox{\hyperlink{class_b_s_t}{B\+ST}} of transportation\+Locals \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_transportation_local_reg_a89aa0f9f70fd2ec6c4e9a769976d77e7}{add\+Transportation\+Local}} (int transportation\+Local\+Id, float distance\+To\+Airport, string transportation\+Type, \mbox{\hyperlink{class_airport}{Airport}} $\ast$airport)
+\item 
+bool \mbox{\hyperlink{class_transportation_local_reg_aa1db731d7c789035112a81904d1a8590}{add\+Transportation\+Local\+Time\+Table}} (int transportation\+Local\+Id, string time)
+\item 
+bool \mbox{\hyperlink{class_transportation_local_reg_a2930179d87a044fc10eb7bbc546c9567}{rem\+Transportation\+Local\+Time\+Table}} (int transportation\+Local\+Id, string time)
+\item 
+void \mbox{\hyperlink{class_transportation_local_reg_af3aa3837bdec05129aba54c70f149c69}{list\+Transportation\+Local\+Time\+Table}} (int transportation\+Local\+Id)
+\begin{DoxyCompactList}\small\item\em lists all times of transportation\+Local with transportation\+Local\+Id \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_transportation_local_reg_a62ecd4a67bf86fa8fd6721515e7e1736}\label{class_transportation_local_reg_a62ecd4a67bf86fa8fd6721515e7e1736}} 
+void \mbox{\hyperlink{class_transportation_local_reg_a62ecd4a67bf86fa8fd6721515e7e1736}{list\+Transportation\+Locals}} ()
+\begin{DoxyCompactList}\small\item\em lists all transportation\+Locals \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_transportation_local_reg_aae1d87554d6c6be841e4f5563912955a}{rem\+Transportation\+Local}} (int transportation\+Local\+Id)
+\item 
+bool \mbox{\hyperlink{class_transportation_local_reg_a2babe66366c94afef5ef888611060859}{find\+Transportation\+Local}} (int transportation\+Local\+Id)
+\item 
+\mbox{\hyperlink{class_transportation_local}{Transportation\+Local}} $\ast$ \mbox{\hyperlink{class_transportation_local_reg_a2e43b288173acede4e9ef2b569660cd4}{get\+Transportation\+Local\+By\+Id}} (int transportation\+Local\+Id)
+\item 
+void \mbox{\hyperlink{class_transportation_local_reg_a1547b5eadd1ae7573f6a0b5a87921056}{rem\+Transportation\+Local}} (string local)
+\begin{DoxyCompactList}\small\item\em removes a transport associated with the airport whose name is local \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_transportation_local_reg_a89aa0f9f70fd2ec6c4e9a769976d77e7}\label{class_transportation_local_reg_a89aa0f9f70fd2ec6c4e9a769976d77e7}} 
+\index{TransportationLocalReg@{TransportationLocalReg}!addTransportationLocal@{addTransportationLocal}}
+\index{addTransportationLocal@{addTransportationLocal}!TransportationLocalReg@{TransportationLocalReg}}
+\doxysubsubsection{\texorpdfstring{addTransportationLocal()}{addTransportationLocal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Transportation\+Local\+Reg\+::add\+Transportation\+Local (\begin{DoxyParamCaption}\item[{int}]{transportation\+Local\+Id,  }\item[{float}]{distance\+To\+Airport,  }\item[{string}]{transportation\+Type,  }\item[{\mbox{\hyperlink{class_airport}{Airport}} $\ast$}]{airport }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em transportation\+Local\+Id} & \\
+\hline
+{\em distance\+To\+Airport} & \\
+\hline
+{\em transportation\+Type} & \\
+\hline
+{\em airport} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if transportation\+Local with parameters was added to \mbox{\hyperlink{class_b_s_t}{B\+ST}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transportation_local_reg_a58ac035f051e88365dfcc6da94d25485}\label{class_transportation_local_reg_a58ac035f051e88365dfcc6da94d25485}} 
+\index{TransportationLocalReg@{TransportationLocalReg}!addTransportationLocal@{addTransportationLocal}}
+\index{addTransportationLocal@{addTransportationLocal}!TransportationLocalReg@{TransportationLocalReg}}
+\doxysubsubsection{\texorpdfstring{addTransportationLocal()}{addTransportationLocal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Transportation\+Local\+Reg\+::add\+Transportation\+Local (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_transportation_local}{Transportation\+Local}} $\ast$}]{transportation\+Local }\end{DoxyParamCaption})}
+
+
+
+adds transportation\+Local to \mbox{\hyperlink{class_b_s_t}{B\+ST}} of transportation\+Locals 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transportation\+Local} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_transportation_local_reg_aa1db731d7c789035112a81904d1a8590}\label{class_transportation_local_reg_aa1db731d7c789035112a81904d1a8590}} 
+\index{TransportationLocalReg@{TransportationLocalReg}!addTransportationLocalTimeTable@{addTransportationLocalTimeTable}}
+\index{addTransportationLocalTimeTable@{addTransportationLocalTimeTable}!TransportationLocalReg@{TransportationLocalReg}}
+\doxysubsubsection{\texorpdfstring{addTransportationLocalTimeTable()}{addTransportationLocalTimeTable()}}
+{\footnotesize\ttfamily bool Transportation\+Local\+Reg\+::add\+Transportation\+Local\+Time\+Table (\begin{DoxyParamCaption}\item[{int}]{transportation\+Local\+Id,  }\item[{string}]{time }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em transportation\+Local\+Id} & \\
+\hline
+{\em time} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if time was added sucefully to transportation\+Local with transportation\+Local\+Id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transportation_local_reg_a2babe66366c94afef5ef888611060859}\label{class_transportation_local_reg_a2babe66366c94afef5ef888611060859}} 
+\index{TransportationLocalReg@{TransportationLocalReg}!findTransportationLocal@{findTransportationLocal}}
+\index{findTransportationLocal@{findTransportationLocal}!TransportationLocalReg@{TransportationLocalReg}}
+\doxysubsubsection{\texorpdfstring{findTransportationLocal()}{findTransportationLocal()}}
+{\footnotesize\ttfamily bool Transportation\+Local\+Reg\+::find\+Transportation\+Local (\begin{DoxyParamCaption}\item[{int}]{transportation\+Local\+Id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em transportation\+Local\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if transportation\+Local with transportation\+Local\+Id was found 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transportation_local_reg_a2e43b288173acede4e9ef2b569660cd4}\label{class_transportation_local_reg_a2e43b288173acede4e9ef2b569660cd4}} 
+\index{TransportationLocalReg@{TransportationLocalReg}!getTransportationLocalById@{getTransportationLocalById}}
+\index{getTransportationLocalById@{getTransportationLocalById}!TransportationLocalReg@{TransportationLocalReg}}
+\doxysubsubsection{\texorpdfstring{getTransportationLocalById()}{getTransportationLocalById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_transportation_local}{Transportation\+Local}} $\ast$ Transportation\+Local\+Reg\+::get\+Transportation\+Local\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{transportation\+Local\+Id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em transportation\+Local\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+transportation\+Local with transportation\+Local\+Id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transportation_local_reg_a619fb10b32bc5eb2e836542a2f4ed919}\label{class_transportation_local_reg_a619fb10b32bc5eb2e836542a2f4ed919}} 
+\index{TransportationLocalReg@{TransportationLocalReg}!getTransportationLocals@{getTransportationLocals}}
+\index{getTransportationLocals@{getTransportationLocals}!TransportationLocalReg@{TransportationLocalReg}}
+\doxysubsubsection{\texorpdfstring{getTransportationLocals()}{getTransportationLocals()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_b_s_t}{B\+ST}}$<$ \mbox{\hyperlink{class_transportation_local}{Transportation\+Local}} $\ast$ $>$ \& Transportation\+Local\+Reg\+::get\+Transportation\+Locals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_b_s_t}{B\+ST}} of transportation locals 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transportation_local_reg_af3aa3837bdec05129aba54c70f149c69}\label{class_transportation_local_reg_af3aa3837bdec05129aba54c70f149c69}} 
+\index{TransportationLocalReg@{TransportationLocalReg}!listTransportationLocalTimeTable@{listTransportationLocalTimeTable}}
+\index{listTransportationLocalTimeTable@{listTransportationLocalTimeTable}!TransportationLocalReg@{TransportationLocalReg}}
+\doxysubsubsection{\texorpdfstring{listTransportationLocalTimeTable()}{listTransportationLocalTimeTable()}}
+{\footnotesize\ttfamily void Transportation\+Local\+Reg\+::list\+Transportation\+Local\+Time\+Table (\begin{DoxyParamCaption}\item[{int}]{transportation\+Local\+Id }\end{DoxyParamCaption})}
+
+
+
+lists all times of transportation\+Local with transportation\+Local\+Id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transportation\+Local\+Id} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_transportation_local_reg_aae1d87554d6c6be841e4f5563912955a}\label{class_transportation_local_reg_aae1d87554d6c6be841e4f5563912955a}} 
+\index{TransportationLocalReg@{TransportationLocalReg}!remTransportationLocal@{remTransportationLocal}}
+\index{remTransportationLocal@{remTransportationLocal}!TransportationLocalReg@{TransportationLocalReg}}
+\doxysubsubsection{\texorpdfstring{remTransportationLocal()}{remTransportationLocal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Transportation\+Local\+Reg\+::rem\+Transportation\+Local (\begin{DoxyParamCaption}\item[{int}]{transportation\+Local\+Id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em transportation\+Local\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if transportation\+Local with transportation\+Local\+Id was removed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transportation_local_reg_a1547b5eadd1ae7573f6a0b5a87921056}\label{class_transportation_local_reg_a1547b5eadd1ae7573f6a0b5a87921056}} 
+\index{TransportationLocalReg@{TransportationLocalReg}!remTransportationLocal@{remTransportationLocal}}
+\index{remTransportationLocal@{remTransportationLocal}!TransportationLocalReg@{TransportationLocalReg}}
+\doxysubsubsection{\texorpdfstring{remTransportationLocal()}{remTransportationLocal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Transportation\+Local\+Reg\+::rem\+Transportation\+Local (\begin{DoxyParamCaption}\item[{string}]{local }\end{DoxyParamCaption})}
+
+
+
+removes a transport associated with the airport whose name is local 
+
+
+\begin{DoxyParams}{Parameters}
+{\em local} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_transportation_local_reg_a2930179d87a044fc10eb7bbc546c9567}\label{class_transportation_local_reg_a2930179d87a044fc10eb7bbc546c9567}} 
+\index{TransportationLocalReg@{TransportationLocalReg}!remTransportationLocalTimeTable@{remTransportationLocalTimeTable}}
+\index{remTransportationLocalTimeTable@{remTransportationLocalTimeTable}!TransportationLocalReg@{TransportationLocalReg}}
+\doxysubsubsection{\texorpdfstring{remTransportationLocalTimeTable()}{remTransportationLocalTimeTable()}}
+{\footnotesize\ttfamily bool Transportation\+Local\+Reg\+::rem\+Transportation\+Local\+Time\+Table (\begin{DoxyParamCaption}\item[{int}]{transportation\+Local\+Id,  }\item[{string}]{time }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em transportation\+Local\+Id} & \\
+\hline
+{\em time} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if time was removed from transportation\+Local with transportation\+Local\+Id 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Registers/Transportation\+Local\+Reg.\+h\item 
+Registers/Transportation\+Local\+Reg.\+cpp\end{DoxyCompactItemize}
